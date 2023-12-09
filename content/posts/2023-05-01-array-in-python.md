@@ -4,7 +4,7 @@ slug: array-in-python
 author: aaron
 date: 2023-05-01
 tags: ["python", "array", "numpy"]
-ShowBreadCrumbs: false
+# ShowBreadCrumbs: false
 # draft: true
 ---
 
