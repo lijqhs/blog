@@ -173,9 +173,9 @@ params:
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
     #     safari_pinned_tab: "<link / abs url>"
-        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5/img/icons/pumpkin-5711688_640.jpg"
-        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5/img/icons/pumpkin-5711688_640.jpg"
-        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5/img/icons/pumpkin-5711688_640.jpg"
+        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
+        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
+        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
