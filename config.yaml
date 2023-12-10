@@ -1,5 +1,5 @@
 baseURL: "https://www.aaronnotes.com/blog/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: Blog
+title: Dev Blog
 paginate: 5
 theme: PaperMod
 
@@ -26,7 +26,7 @@ languages:
           series: series
         menu:
             main:
-                - name: Archive
+                - name: Archives
                   url: archives
                   weight: 5
                 - name: Search
@@ -35,6 +35,9 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 10
+                - name: Design Patterns
+                  url: design-patterns/
+                  weight: 20
                 - name: Home
                   url: https://www.aaronnotes.com
                 - name: LeetNotes
@@ -140,9 +143,9 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "Blog"
+        Title: "Dev Blog"
         Content: >
-            Notes for anything
+            The Programming Jottings
 
     socialIcons:
         - name: github
@@ -173,9 +176,9 @@ params:
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
     #     safari_pinned_tab: "<link / abs url>"
-        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
-        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
-        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/IMG_2269.JPG"
+        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
+        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
+        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data

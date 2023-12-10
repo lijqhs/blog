@@ -1,6 +1,6 @@
 ---
-title: Comprehensions in Python
-slug: comprehensions-in-python
+title: Comprehensions
+slug: comprehensions
 author: aaron
 date: 2023-05-03
 tags: ["python", "list comprehension", "dictionary comprehension", "set comprehension", "generator"]

@@ -1,6 +1,6 @@
 ---
-title: Array in Python
-slug: array-in-python
+title: Array
+slug: array
 author: aaron
 date: 2023-05-01
 tags: ["python", "array", "numpy"]

@@ -1,6 +1,6 @@
 ---
-title: Arguments in Python
-slug: arguments-in-python
+title: Arguments
+slug: arguments
 author: aaron
 date: 2023-05-02
 tags: ["python", "keyword arguments", "positional arguments"]
