@@ -100,3 +100,19 @@ Subject state: State 3
 ```
 
 As you can see, the `ConcreteObserver` objects are notified of changes in the state of the `ConcreteSubject` object without tightly coupling them together. The `ConcreteSubject` object notifies its observers when its state changes using the `notify` method. This example demonstrates how the Observer pattern can be used to define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
+## Pros of the Observer pattern
+
+- It establishes a decoupled and flexible relationship between the subject and its observers, allowing for easy addition or removal of observers without modifying the subject.
+- It enables the subject to notify multiple observers simultaneously, ensuring that they stay synchronized with the subject's state.
+- It promotes the principle of separation of concerns by keeping the subject and observers separate, making the code easier to understand and maintain.
+
+## Cons of the Observer pattern
+
+- Observers may receive unnecessary notifications if the subject's state changes frequently or if the observers are not interested in all types of updates.
+- Observers might have dependencies on the subject's implementation details, which can introduce tight coupling if not carefully designed.
+
+## Related design patterns
+
+1. Publisher/Subscriber: The Publisher/Subscriber pattern is an extension of the Observer pattern that introduces a central entity (the publisher) that manages the subscription and notification process between multiple publishers and subscribers. It provides more flexibility in terms of event filtering and multiple publishers.
+2. Mediator: The Mediator pattern can be used in conjunction with the Observer pattern to decouple the communication between objects by introducing a mediator object that encapsulates the interaction logic between the subject and observers.

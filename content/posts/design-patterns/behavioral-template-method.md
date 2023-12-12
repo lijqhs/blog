@@ -66,8 +66,20 @@ Doing step three in ConcreteClass.
 
 As you can see, the `ConcreteClass` object follows the common algorithm structure defined in the `AbstractClass` and provides specific implementations for some of the steps. This example demonstrates how the Template Method pattern can be used to define a common algorithm structure that can be reused across different subclasses, while still allowing the subclasses to customize some parts of the algorithm's behavior.
 
-## Relations with Other Patterns
 
-- Factory Method is a specialization of Template Method. At the same time, a Factory Method may serve as a step in a large Template Method.
+## Pros of the Template Method pattern
 
-- Template Method is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses. Strategy is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior. Template Method works at the class level, so it’s static. Strategy works on the object level, letting you switch behaviors at runtime.
+- It promotes code reuse by providing a common algorithm structure in the base class and allowing subclasses to customize specific parts.
+- It provides a clear separation between the overall algorithm and the specific implementations, making the code easier to understand and maintain.
+- It allows for extension without modification, as new subclasses can be created to introduce new variations of the algorithm.
+
+## Cons of the Template Method pattern
+
+- It can make the code more complex by adding an additional layer of abstraction and inheritance.
+- It may limit flexibility compared to other patterns that allow more dynamic composition of behavior.
+
+## Related design patterns
+
+1. Strategy Pattern: The Template Method pattern can be contrasted with the Strategy pattern. While the Template Method uses inheritance to define the algorithm structure, the Strategy pattern uses composition by encapsulating algorithms in separate classes and allowing them to be switched at runtime.
+2. Hook Method: A Hook Method is a special method in the Template Method pattern that provides a default implementation but can be overridden by subclasses to customize behavior at certain points in the algorithm.
+3. Factory Method: The Template Method pattern can be combined with the Factory Method pattern to provide a common algorithm structure for creating objects, while delegating the creation of specific objects to subclasses.

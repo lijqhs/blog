@@ -103,6 +103,21 @@ ConcreteVisitor visiting ConcreteElementB.
 
 As you can see, the `ConcreteVisitor` object visits each `ConcreteElement` object in the `ObjectStructure` and applies the algorithm defined in the `visit_concrete_element_a` and `visit_concrete_element_b` methods. This example demonstrates how the Visitor pattern can be used to separate an algorithm from an object structure on which it operates.
 
-## Reference
+## Pros of the Visitor pattern
 
-- https://refactoring.guru/design-patterns/visitor
+- It allows you to add new operations to existing object structures without modifying the objects themselves, promoting the Open-Closed Principle.
+- It centralizes the operations in the visitor classes, making it easier to manage and maintain the codebase.
+- It separates the concerns of the objects and the operations, leading to better code organization and modularity.
+
+## Cons of the Visitor pattern
+
+- Adding new elements to the object structure requires modifying the visitor interface and all its implementations, which can be cumbersome when the structure grows.
+- It can increase the complexity of the code, especially if the object structure and the number of operations are large.
+
+## Related design patterns
+
+1. Composite: The Visitor pattern is often used with the Composite pattern to apply operations to a hierarchical structure of objects.
+2. Iterator: The Visitor pattern can be combined with the Iterator pattern to traverse and perform operations on a collection of objects.
+3. Strategy: The Visitor pattern can be used in conjunction with the Strategy pattern to provide different algorithms or strategies for visiting objects.
+
+These related patterns can be applied in conjunction with the Visitor pattern based on the specific requirements and design goals of the system.

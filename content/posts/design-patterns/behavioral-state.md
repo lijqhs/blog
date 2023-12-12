@@ -75,11 +75,21 @@ ConcreteStateB handling.
 
 As you can see, the `Context` object's behavior changes as its internal state changes. The `Context` object delegates handling of requests to the current `State` object using the `handle` method. This example demonstrates how the State pattern can be used to encapsulate state-dependent behavior into separate classes, and the object's behavior changes at runtime by switching between different state objects.
 
-## Relations with Other Patterns
+## Pros of the State pattern
 
-- Bridge, State, Strategy (and to some degree Adapter) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+- It allows objects to change their behavior dynamically based on internal state changes, without the need for complex conditional statements or branching.
+- It encapsulates state-specific behavior into separate classes, promoting code organization and modularity.
+- It simplifies the addition of new states, as new state classes can be created without modifying existing code.
 
-- State can be considered as an extension of Strategy. Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects. Strategy makes these objects completely independent and unaware of each other. However, State doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
+## Cons of the State pattern
+
+- The number of classes can increase when multiple states are involved, potentially increasing the complexity of the codebase.
+- Clients of the State pattern need to be aware of the available states and their transitions, which can introduce additional complexity.
+
+## Related design patterns
+
+1. Strategy: The State pattern is often considered a variation of the Strategy pattern. While both patterns encapsulate behavior into separate classes, the State pattern focuses on state-specific behavior and allows for dynamic state transitions.
+2. State Machines: State Machines can be used in conjunction with the State pattern to define and manage state transitions in a more structured and formal way.
 
 ## Reference
 

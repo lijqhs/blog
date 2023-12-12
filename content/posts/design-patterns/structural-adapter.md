@@ -9,6 +9,8 @@ tags: ["python", "design pattern"]
 
 The Adapter pattern is a structural design pattern that allows incompatible interfaces to work together by creating a bridge between them. It involves creating an adapter class that wraps an existing class and provides a compatible interface that other classes can use. This pattern is useful when you need to reuse existing classes that have different interfaces, or when you need to integrate third-party libraries into your application that have incompatible interfaces.
 
+## Example
+
 Here's an example of how to implement the Adapter pattern in Python:
 
 ```python
@@ -51,34 +53,37 @@ Explanation:
 - The `Adapter` class wraps an instance of the `Adaptee` class and implements the `Target` interface by calling the `specific_request()` method on the `Adaptee` instance.
 - In this example, we create an instance of the `Adaptee` class `adaptee`, create an instance of the `Adapter` class `adapter` that wraps the `adaptee` instance, and call the `request()` method on the `adapter` instance. We then verify that the result of calling `request()` on the `adapter` instance is the same as calling `specific_request()` on the `adaptee` instance.
 
-Pros of the Adapter pattern:
+## Pros of the Adapter pattern
+
 - Allows incompatible interfaces to work together, which can help reuse existing code and integrate third-party libraries into your application.
 - Provides a flexible way to add new functionality to an existing class without modifying its code.
 - Can improve code readability by providing a more intuitive and consistent interface to other classes.
 
-Cons of the Adapter pattern:
+## Cons of the Adapter pattern
+
 - Can add complexity to the code by introducing an additional layer of abstraction.
 - Can reduce performance by adding extra method calls and object instantiations.
 - Can make the code harder to understand and maintain if used excessively.
 
-When to use the Adapter pattern:
+## When to use the Adapter pattern
+
 - When you need to reuse existing classes that have incompatible interfaces.
 - When you need to integrate third-party libraries into your application that have incompatible interfaces.
 - When you need to add new functionality to an existing class without modifying its code.
 - When you want to provide a more intuitive and consistent interface to other classes.
 
-## Relations with Other Patterns
+## Relations with other patterns
 
-- Bridge is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, Adapter is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+The Adapter pattern is a structural design pattern that allows objects with incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, converting the interface of one class into another interface that clients expect. This pattern makes it possible for classes to work together that could not otherwise due to incompatible interfaces.
 
-- Adapter changes the interface of an existing object, while Decorator enhances an object without changing its interface. In addition, Decorator supports recursive composition, which isn’t possible when you use Adapter.
+The Adapter pattern can be related to other design patterns in the following ways:
 
-- Adapter provides a different interface to the wrapped object, Proxy provides it with the same interface, and Decorator provides it with an enhanced interface.
+1. Decorator Pattern: Both the Adapter and Decorator patterns are structural patterns that wrap an object to modify its behavior. However, the main difference is their intent: the Adapter pattern is focused on providing a different interface, while the Decorator pattern adds additional responsibilities dynamically.
 
-- Facade defines a new interface for existing objects, whereas Adapter tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
+2. Bridge Pattern: The Bridge pattern also aims to decouple two incompatible interfaces, but it does so by separating the abstraction from its implementation. In contrast, the Adapter pattern focuses on adapting the interface of one class to another.
 
-- Bridge, State, Strategy (and to some degree Adapter) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+3. Proxy Pattern: The Proxy pattern provides a surrogate or placeholder for another object to control its access. While the Adapter pattern converts the interface of one object to match another, the Proxy pattern provides a level of indirection and control over the access to an object.
 
-## Reference
+4. Facade Pattern: The Facade pattern provides a simplified interface to a complex subsystem, acting as a high-level interface that makes the subsystem easier to use. The Adapter pattern, on the other hand, provides a different interface for an existing class or object.
 
-- https://refactoring.guru/design-patterns/adapter
+It's important to note that these patterns serve different purposes and can be used in combination to address various design challenges. The choice of which pattern to use depends on the specific requirements and constraints of the system being designed.

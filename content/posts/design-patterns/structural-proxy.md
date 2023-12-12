@@ -136,8 +136,18 @@ As you can see, the `CachingProxy` class caches the results of the first query a
 
 ## Relations with Other Patterns
 
-- **Adapter** provides a different interface to the wrapped object, **Proxy** provides it with the same interface, and Decorator provides it with an enhanced interface.
+The Proxy pattern is a structural design pattern that provides a surrogate or placeholder for another object to control its access. It allows you to add an additional layer of indirection to control the interactions between clients and the real object. The Proxy pattern can be used for various purposes such as access control, caching, or lazy initialization.
 
-- **Facade** is similar to **Proxy** in that both buffer a complex entity and initialize it on its own. Unlike Facade, Proxy has the same interface as its service object, which makes them interchangeable.
+The Proxy pattern can be related to other design patterns in the following ways:
 
-- **Decorator** and **Proxy** have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a Proxy usually manages the life cycle of its service object on its own, whereas the composition of Decorators is always controlled by the client.
+1. Decorator Pattern: Both the Proxy pattern and the Decorator pattern involve wrapping an object with additional functionality. However, the intent of the Proxy pattern is to control access to the object, while the Decorator pattern is focused on adding new behavior or responsibilities to the object.
+
+2. Adapter Pattern: The Proxy pattern and the Adapter pattern are similar in that they both act as intermediaries between clients and objects. However, the Adapter pattern is used to provide a different interface to an existing object, while the Proxy pattern controls access to an object.
+
+3. Singleton Pattern: The Proxy pattern can use the Singleton pattern to ensure that there is only one instance of the Proxy object. This can be useful when you want to control access to a shared resource or manage the creation of the real object.
+
+4. Flyweight Pattern: The Proxy pattern can work in conjunction with the Flyweight pattern to control access to shared Flyweight objects. The Proxy can act as a surrogate for the Flyweight object, providing additional functionality such as access control or lazy loading.
+
+5. Observer Pattern: The Proxy pattern can be used with the Observer pattern to implement lazy initialization or delayed notification. The Proxy can act as a placeholder for the real object until it is actually needed, and the Observer pattern can be used to notify the Proxy when the real object becomes available.
+
+These patterns can be used in combination or independently, depending on the specific requirements and constraints of the system being designed. The choice of which patterns to use depends on the problem at hand and the desired functionality and behavior.

@@ -92,3 +92,20 @@ Alice: Hi, everyone!
 ```
 
 As you can see, the `User` objects communicate with each other through the `ChatroomMediator` object, without knowing about each other's details. The `ChatroomMediator` object handles the communication between the users and modifies their behavior without them knowing. This example demonstrates how the Mediator pattern can be used to encapsulate how a set of objects interact with each other and reduce the complexity of their interactions.
+
+
+## Pros of the Mediator pattern
+
+1. It decouples components by promoting indirect communication through a mediator object, reducing the dependencies between components.
+2. It simplifies the communication logic and coordination between components, centralizing it in the mediator.
+3. It improves code maintainability and extensibility by allowing easy addition or removal of components and changing their interaction without modifying existing components.
+
+## Cons of the Mediator pattern
+
+1. The mediator can become a centralized component that handles multiple responsibilities, which can introduce complexity if not managed properly.
+2. Adding new components may require modifications to the mediator, potentially affecting other components.
+
+## Related design patterns
+
+1. Observer: The Mediator pattern can be used in conjunction with the Observer pattern to enable communication between components through the mediator, with the mediator acting as the subject and the components as observers.
+2. Facade: The Mediator pattern is similar to the Facade pattern in that both patterns promote loose coupling and encapsulation, but they have different focuses. The Mediator pattern focuses on coordinating communication between components, while the Facade pattern focuses on providing a simplified interface to a subsystem.

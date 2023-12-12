@@ -84,7 +84,27 @@ Cons:
 - Requires more code: The Factory Method pattern requires the creation of additional classes and methods, which can result in more code that needs to be written and maintained.
 - May not be necessary for simple applications: For simple applications with only a few types of objects, the Factory Method pattern may introduce unnecessary complexity and overhead.
 
+
+## Related Design Patterns
+
+The Factory Method pattern is a creational design pattern that defines an interface for creating objects, but lets subclasses decide which class to instantiate. It provides a way to delegate the instantiation logic to subclasses, allowing for flexible object creation.
+
+The Factory Method pattern can be related to other design patterns in the following ways:
+
+1. Abstract Factory Pattern: The Abstract Factory pattern provides an interface for creating families of related objects, while the Factory Method pattern focuses on creating a single object. The Factory Method can be used within an Abstract Factory to delegate the creation of individual objects to subclasses.
+
+2. Singleton Pattern: The Factory Method pattern can be used in conjunction with the Singleton pattern to ensure that only one instance of a factory class is available. The Factory Method can encapsulate the logic for creating the Singleton instance and provide a centralized access point to it.
+
+3. Template Method Pattern: The Factory Method pattern and the Template Method pattern are similar in that they both define a skeleton algorithm with certain steps that can be customized by subclasses. The Template Method pattern focuses on defining the overall algorithm, while the Factory Method pattern focuses on creating objects within that algorithm.
+
+4. Strategy Pattern: The Factory Method pattern can be used in conjunction with the Strategy pattern to dynamically select and instantiate different strategies. The Factory Method can be used to create different strategy objects based on certain conditions or inputs.
+
+5. Composite Pattern: The Factory Method pattern can be used with the Composite pattern to create composite objects. The Factory Method can be used to create the individual components of the composite and assemble them together.
+
+It's important to note that the Factory Method pattern is primarily focused on creating objects in a flexible and extensible manner. The choice of which patterns to use in conjunction with the Factory Method pattern depends on the specific requirements and constraints of the system being designed.
+
 ## Reference
+
 - https://en.wikipedia.org/wiki/Factory_method_pattern
 - https://refactoring.guru/design-patterns/factory-method
 - https://refactoring.guru/design-patterns/factory-method/python/example

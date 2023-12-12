@@ -187,3 +187,21 @@ HardwareSupportHandler: Handling hardware issue
 ```
 
 As you can see, each object in the chain handles the support ticket if it can handle the type of issue, and passes the support ticket on to the next object in the chain if it can't. The last object in the chain returns a message indicating that no handler was found. This example demonstrates how the Chain of Responsibility pattern can be used to create a chain of handlers that can route support tickets to the appropriate team based on the type of issue, without the sender of the ticket needing to know which handler in the chain will handle the ticket, and the receiver not needing to know who sent the ticket.
+
+
+## Pros of the Chain of Responsibility pattern
+
+1. It provides a flexible and dynamic way to handle requests without tightly coupling the sender and receiver.
+2. It allows you to add or remove handlers dynamically at runtime, providing easy extensibility and modifiability.
+3. It promotes the principle of single responsibility by assigning different responsibilities to different handlers.
+
+## Cons of the Chain of Responsibility pattern
+
+1. There is no guarantee that a request will be handled since it can reach the end of the chain without finding an appropriate handler.
+2. The chain can become complex and difficult to debug if not properly designed and managed.
+3. Handling a request can introduce some overhead due to the traversal of the chain.
+
+## Related design patterns
+
+1. Composite: The Chain of Responsibility pattern can be combined with the Composite pattern, where a handler can act as a composite object that contains multiple handlers. This allows for more complex chains and hierarchical handling of requests.
+2. Command: The Chain of Responsibility pattern can be used together with the Command pattern. Instead of directly handling a request, a handler can encapsulate the request as a command object and pass it along the chain. This provides more flexibility and allows for easier implementation of undo/redo functionality.

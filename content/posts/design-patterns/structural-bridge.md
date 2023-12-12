@@ -9,6 +9,8 @@ tags: ["python", "design pattern"]
 
 The Bridge pattern is a structural design pattern that decouples an abstraction from its implementation, allowing them to vary independently. It involves creating two separate hierarchies, one for the abstraction and one for the implementation, and using composition to link them together. This pattern is useful when you need to separate the interface of an object from its implementation, or when you need to support multiple implementations of an object.
 
+## Example
+
 Here's an example implementation of the Bridge Design Pattern in Python:
 
 ```python
@@ -51,7 +53,7 @@ To use the abstraction and implementation, you create an instance of a concrete 
 In the example, we create an instance of `ConcreteImplementationA` and pass it to the `Abstraction` constructor, then call the `operation` method on the `abstraction` object, which prints "ConcreteImplementationA operation". We then create an instance of `ConcreteImplementationB` and repeat the process, which prints "ConcreteImplementationB operation". This shows how the abstraction and implementation can vary independently, allowing for greater flexibility and maintainability in our code.
 
 
-## use cases
+## Use cases
 
 The Bridge Design Pattern is a flexible pattern that can be used in many different scenarios where there is a need to separate an abstraction from its implementation. Here are some other use cases where the Bridge pattern can be applied:
 

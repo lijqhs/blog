@@ -80,10 +80,18 @@ This example demonstrates how the Flyweight pattern can be used to efficiently m
 
 ## Relations with Other Patterns
 
-- You can implement shared leaf nodes of the **Composite** tree as **Flyweights** to save some RAM.
+The Flyweight pattern is a structural design pattern that aims to optimize memory usage by sharing common data across multiple objects. It achieves this by separating intrinsic (shared) state from extrinsic (unique) state, with the intrinsic state being shared among multiple objects.
 
-- **Flyweight** shows how to make lots of little objects, whereas **Facade** shows how to make a single object that represents an entire subsystem.
+The Flyweight pattern can be related to other design patterns in the following ways:
 
-- **Flyweight** would resemble **Singleton** if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
-  - There should be only one Singleton instance, whereas a Flyweight class can have multiple instances with different intrinsic states.
-  - The Singleton object can be mutable. Flyweight objects are immutable.
+1. Composite Pattern: The Flyweight pattern can be used in conjunction with the Composite pattern to optimize memory usage in a hierarchical structure. The Flyweight objects can represent shared properties or data that are common to multiple elements in the composite structure, reducing memory consumption.
+
+2. Factory Pattern: The Factory pattern can be used with the Flyweight pattern to manage the creation and retrieval of Flyweight objects. The Factory pattern encapsulates the creation logic and ensures that Flyweight objects are shared and reused appropriately.
+
+3. Proxy Pattern: The Proxy pattern can be combined with the Flyweight pattern to control access to shared Flyweight objects. The Proxy acts as a wrapper around the Flyweight objects, providing additional functionality such as access control or lazy loading.
+
+4. Decorator Pattern: The Flyweight pattern can work in conjunction with the Decorator pattern to add additional behavior or responsibilities to Flyweight objects. The Decorator pattern allows you to dynamically wrap Flyweight objects with decorators, extending their functionality without affecting the shared intrinsic state.
+
+5. Iterator Pattern: The Flyweight pattern can be used with the Iterator pattern to iterate over a collection of Flyweight objects. The Iterator pattern provides a way to traverse and access the shared Flyweight objects without exposing the underlying representation or structure.
+
+It's important to note that the Flyweight pattern is primarily focused on memory optimization by sharing common data, while the mentioned patterns serve different purposes. The choice of which patterns to use in conjunction with the Flyweight pattern depends on the specific requirements and constraints of the system being designed.

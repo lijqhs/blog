@@ -93,10 +93,19 @@ State 1
 
 As you can see, the `Caretaker` object manages the `Memento` objects and allows the `Originator` object's state to be saved and restored without exposing its internal structure. This example demonstrates how the Memento pattern can be used to capture and externalize an object's internal state so that the object can be restored to that state later without violating encapsulation.
 
-## Relations with Other Patterns
 
-- You can use Command and Memento together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
+## Pros of the Memento pattern
 
-- You can use Memento along with Iterator to capture the current iteration state and roll it back if necessary.
+- It allows objects to save and restore their state without exposing internal details, maintaining encapsulation.
+- It provides an easy way to implement undo/redo functionality or maintain checkpoints in an application.
+- It promotes separation of concerns by separating the responsibility of state management from the object itself.
 
-- Sometimes Prototype can be a simpler alternative to Memento. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
+## Cons of the Memento pattern
+
+- Storing and managing mementos can consume memory and impact performance, especially if a large number of mementos are created and stored.
+- The pattern can become complex when dealing with objects with complex internal states.
+
+## Related design patterns
+
+1. Command: The Memento pattern can be used in conjunction with the Command pattern to support undo/redo functionality. The Command pattern can encapsulate operations and use the Memento pattern to capture and restore the state of objects affected by the operations.
+2. Prototype: The Memento pattern can be used in conjunction with the Prototype pattern to create deep copies of objects and store their states as mementos.

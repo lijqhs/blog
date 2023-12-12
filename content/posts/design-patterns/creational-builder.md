@@ -7,18 +7,81 @@ tags: ["python", "design pattern"]
 ---
 
 
-The Builder pattern is a creational design pattern that separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It provides an interface for creating an object in a step-by-step manner, giving the developer more control over the construction process and allowing them to create complex objects in a more readable and maintainable way.
+The Builder pattern is a creational design pattern that separates the construction of complex objects from their representation. It provides a step-by-step approach to building objects, allowing you to create different variations of an object while keeping the construction process consistent.
 
-In the Builder pattern, there is a builder class that provides methods for setting each property of the object being constructed. The builder class can have multiple concrete implementations, each implementing the same interface but providing a different way to construct the object. Once the object is fully constructed, the builder returns the final object to the client.
+## Example
 
-The main advantage of the Builder pattern is that it allows the client code to create complex objects in a step-by-step manner, without having to know the specific implementation details of the object being constructed. It also allows the same construction process to create different representations of the object, giving the developer more flexibility and control over the construction process.
+Here's an example of the Builder pattern implemented in Python:
 
-The Builder pattern is typically used in the following scenarios:
+```python
+class Product:
+    def __init__(self):
+        self.part_a = None
+        self.part_b = None
 
-- When the object being constructed is complex and has many properties that need to be set in a specific order or with certain constraints.
-- When the object's construction involves optional properties or properties with default values, allowing the developer to set only the necessary properties and leave the rest to default values.
-- When the object being constructed needs to support multiple representations or configurations.
+    def __str__(self):
+        return f"Part A: {self.part_a}, Part B: {self.part_b}"
 
-Here's an example scenario where the Builder pattern might be used:
 
-Suppose you are developing a web application that allows users to create customized pizzas. Each pizza can have a variety of toppings, sauces, and crust types, and the final price of the pizza is based on the combination of these properties. Using the Builder pattern, you can create a `PizzaBuilder` class that provides methods for setting each property of the pizza, such as `setToppings()`, `setSauce()`, and `setCrust()`. The `PizzaBuilder` class can have multiple concrete implementations, each providing a different way to construct the pizza based on the user's preferences. Once the pizza is fully constructed, the `PizzaBuilder` returns the final pizza object to the client. This allows the client to create a customized pizza in a step-by-step manner, without having to know the specific implementation details of the pizza being constructed.
+class Builder:
+    def build_part_a(self):
+        pass
+
+    def build_part_b(self):
+        pass
+
+    def get_product(self):
+        pass
+
+
+class ConcreteBuilder(Builder):
+    def __init__(self):
+        self.product = Product()
+
+    def build_part_a(self):
+        self.product.part_a = "Part A"
+
+    def build_part_b(self):
+        self.product.part_b = "Part B"
+
+    def get_product(self):
+        return self.product
+
+
+class Director:
+    def __init__(self, builder):
+        self.builder = builder
+
+    def construct_product(self):
+        self.builder.build_part_a()
+        self.builder.build_part_b()
+
+
+# Usage
+builder = ConcreteBuilder()
+director = Director(builder)
+director.construct_product()
+product = builder.get_product()
+print(product)
+```
+
+In the example, we have a `Product` class that represents the object being built. The `Builder` class defines the interface for building the product, and the `ConcreteBuilder` class implements the specific construction steps. The `Director` class controls the construction process by invoking the builder's methods in a specific order.
+
+## Pros of the Builder pattern
+
+1. It provides a clear separation between the construction logic and the final object, making the construction process more manageable and flexible.
+2. It allows you to create complex objects step by step, making it easier to handle variations and configurations.
+3. It isolates the client code from the specifics of object construction, promoting loose coupling.
+
+## Cons of the Builder pattern
+
+1. The code complexity can increase due to the introduction of multiple classes and interfaces.
+2. It may be less suitable for simpler object construction scenarios where the number of steps and variations is limited.
+
+## Related design patterns
+
+1. Factory Method: The Builder pattern can be seen as an alternative to the Factory Method pattern when the construction process involves multiple steps and variations.
+2. Abstract Factory: The Builder pattern can be used together with the Abstract Factory pattern to create families of objects, with each builder representing a specific product family.
+3. Composite: The Builder pattern can be combined with the Composite pattern to construct complex composite objects step by step.
+
+These related patterns can complement the Builder pattern based on the specific requirements and design needs of the system.

@@ -112,6 +112,19 @@ The Factory Method pattern provides an interface for creating objects, but allow
 
 The Abstract Factory pattern provides an interface for creating families of related or dependent objects, without specifying their concrete classes. This pattern is useful when you want to create a set of related objects that work together in a coherent way, but you want to decouple the client code from the specific classes of those objects. 
 
+
+## Pros of the Abstract Factory pattern
+
+1. It provides a way to create families of related objects without specifying their concrete classes, allowing for greater flexibility and interchangeability.
+2. It encapsulates the object creation logic within factories, making it easier to introduce new product variants or families.
+3. It promotes the principle of separation of concerns by isolating the client code from the details of object creation.
+
+## Cons of the Abstract Factory pattern
+
+1. Adding new product variants or families may require modifying the abstract factory interface and all of its implementations, which can be cumbersome and lead to code changes in multiple places.
+2. The complexity of the pattern can increase as the number of product families and their variations grows.
+
+
 Here are some more specific purposes and benefits of using these patterns:
 
 - **Encapsulation of object creation logic:** The Factory Method and Abstract Factory patterns encapsulate the details of object creation in a separate class or method, which helps to keep the client code simple and focused on its main responsibilities.
@@ -129,3 +142,4 @@ Overall, the Factory Method and Abstract Factory design patterns are useful tool
 ## Reference
 
 - https://stackoverflow.com/questions/5739611/what-are-the-differences-between-abstract-factory-and-factory-design-patterns
+

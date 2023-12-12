@@ -80,12 +80,19 @@ Item 3
 
 As you can see, the `client_code` function iterates over the elements of the list using the `next` method of the iterator. The iterator provides a uniform interface for traversing the list without exposing its underlying representation. This example demonstrates how the Iterator pattern can be used to provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
-## Relations with Other Patterns
 
-- You can use Iterators to traverse Composite trees.
+## Pros of the Iterator pattern
 
-- You can use Factory Method along with Iterator to let collection subclasses return different types of iterators that are compatible with the collections.
+1. It provides a uniform way to iterate over different types of collections without exposing their internal structure or implementation details.
+2. It simplifies the client code by abstracting the traversal logic and providing a consistent interface for accessing elements.
+3. It supports multiple iterations over the same collection simultaneously.
 
-- You can use Memento along with Iterator to capture the current iteration state and roll it back if necessary.
+## Cons of the Iterator pattern
 
-- You can use Visitor along with Iterator to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
+1. It adds an additional layer of abstraction, which can increase the complexity of the code.
+2. The iterator may not be efficient for certain types of collections, especially if the collection needs to be modified during iteration.
+
+## Related design patterns
+
+1. Composite: The Iterator pattern is often used in conjunction with the Composite pattern to iterate over composite structures, such as trees or hierarchies, where the iterator traverses the structure and provides a way to access the individual elements.
+2. Factory Method: The Factory Method pattern can be used to provide a standardized way to create iterators for different types of collections, encapsulating the creation logic and allowing for more flexibility and extensibility.
