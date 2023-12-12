@@ -179,8 +179,8 @@ params:
         safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
 
     cover:
-        hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
+        # hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
     #     hiddenInSingle: true # hide on single page
 
     fuseOpts:
