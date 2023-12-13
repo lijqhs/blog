@@ -2,7 +2,7 @@
 title: Singleton with Decorator
 slug: singleton-with-decorator
 author: aaron
-date: 2023-05-04
+date: 2023-04-04
 tags: ["python", "decorator", "design pattern"]
 ---
 
