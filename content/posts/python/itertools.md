@@ -2,7 +2,7 @@
 title: Itertools
 slug: itertools
 author: aaron
-date: 2023-05-08
+date: 2023-04-08
 tags: ["python", "itertools"]
 ---
 
