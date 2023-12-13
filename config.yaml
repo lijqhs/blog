@@ -35,8 +35,11 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 10
-                - name: Design Patterns
-                  url: design-patterns/
+                # - name: Design Patterns
+                #   url: design-patterns/
+                #   weight: 20
+                - name: Series
+                  url: series/
                   weight: 20
                 - name: Home
                   url: https://www.aaronnotes.com
