@@ -3,7 +3,7 @@ title: Overriding vs. Overloading
 slug: overriding-vs-overloading
 author: aaron
 date: 2023-05-12
-tags: ["python", "overriding", "overloading", "object-oriented programming"]
+tags: ["python", "oop"]
 ---
 
 
