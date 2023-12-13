@@ -4,6 +4,7 @@ slug: comprehensions
 author: aaron
 date: 2023-04-03
 tags: ["python", "comprehension", "generator"]
+categories: ["Python Tips"]
 ---
 
 
