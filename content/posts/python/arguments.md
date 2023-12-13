@@ -2,7 +2,7 @@
 title: Arguments
 slug: arguments
 author: aaron
-date: 2023-05-02
+date: 2023-04-02
 tags: ["python"]
 ---
 
