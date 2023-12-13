@@ -4,6 +4,7 @@ slug: name-mangling
 author: aaron
 date: 2023-04-10
 tags: ["python", "name mangling"]
+categories: ["Python Tips"]
 ---
 
 
