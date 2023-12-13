@@ -1,9 +1,10 @@
 ---
-title: Strategy
-slug: Strategy
+title: Strategy Pattern
+slug: Strategy Pattern
 author: aaron
 date: 2023-05-20T10:20:07
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["strategy pattern", "template method pattern", "factory method pattern", "composite pattern"]
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: Visitor
-slug: Visitor
+title: Visitor Pattern
+slug: Visitor Pattern
 author: aaron
 date: 2023-05-20T10:20:09
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["visitor pattern", "composite pattern", "iterator pattern", "strategy pattern"]
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: Builder
-slug: Builder
+title: Builder Pattern
+slug: Builder Pattern 
 author: aaron
 date: 2023-05-20T10:00:02
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["builder pattern", "abstract factory pattern", "factory method pattern", "composite pattern"]
 ---
 
 

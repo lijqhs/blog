@@ -1,10 +1,19 @@
 ---
+title: List of Design Patterns
+slug: List of Design Patterns
+author: aaron
+date: 2023-05-20T11:00:00
+series: ["Design Patterns"]
+
+---
+
+<!-- ---
 title: "Design Patterns" # in any language you want
 layout: "single" # is necessary
 url: "/design-patterns/"
 description: "List for Design Patterns"
 # summary: "search"
----
+--- -->
 
 
 ## Creational patterns
@@ -19,8 +28,8 @@ description: "List for Design Patterns"
   - [Composite]({{<ref "/posts/design-patterns/structural-composite.md">}}): Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
   - [Decorator]({{<ref "/posts/design-patterns/structural-decorator.md">}}): Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
   - [Facade]({{<ref "/posts/design-patterns/structural-facade.md">}}): Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
-  - [Flyweight]({{<ref "/posts/design-patterns/structural-flyweight.md">}}): Use sharing to support large numbers of similar objects efficiently.
-  - [Proxy]({{<ref "/posts/design-patterns/structural-proxy.md">}}): Provide a surrogate or placeholder for another object to control access to it.
+  - [Flyweight]({{<ref "structural-flyweight.md">}}): Use sharing to support large numbers of similar objects efficiently.
+  - [Proxy]({{<ref "structural-proxy.md">}}): Provide a surrogate or placeholder for another object to control access to it.
 ## Behavioral patterns
   - [Chain of Responsibility]({{<ref "/posts/design-patterns/behavioral-chain-of-responsibility.md">}}): Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
   - [Command]({{<ref "/posts/design-patterns/behavioral-command.md">}}): Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.

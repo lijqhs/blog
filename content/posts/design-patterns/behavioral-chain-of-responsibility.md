@@ -1,9 +1,10 @@
 ---
-title: Chain of Responsibility
-slug: Chain of Responsibility
+title: Chain of Responsibility Pattern
+slug: Chain of Responsibility Pattern
 author: aaron
 date: 2023-05-20T10:20:00
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["chain of responsibility pattern", "composite pattern", "command pattern"]
 ---
 
 

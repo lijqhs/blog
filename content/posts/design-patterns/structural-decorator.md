@@ -1,9 +1,10 @@
 ---
-title: Decorator
-slug: Decorator
+title: Decorator Pattern
+slug: Decorator Pattern
 author: aaron
 date: 2023-05-20T10:10:03
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["decorator pattern", "adapter pattern", "composite pattern", "strategy pattern", "template method pattern", "proxy pattern"]
 ---
 
 

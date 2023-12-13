@@ -1,9 +1,10 @@
 ---
-title: Prototype
-slug: Prototype
+title: Prototype Pattern
+slug: Prototype Pattern
 author: aaron
 date: 2023-05-20T10:00:03
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["prototype pattern", "abstract factory pattern", "singleton pattern", "builder pattern", "composite pattern", "memento pattern"]
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: Singleton
-slug: Singleton
+title: Singleton Pattern
+slug: Singleton Pattern
 author: aaron
 date: 2023-05-20T10:00:04
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["singleton pattern", "factory pattern", "proxy pattern", "observer pattern", "command pattern"]
 ---
 
 

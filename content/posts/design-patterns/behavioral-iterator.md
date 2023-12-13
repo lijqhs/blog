@@ -1,9 +1,10 @@
 ---
-title: Iterator
-slug: Iterator
+title: Iterator Pattern
+slug: Iterator Pattern
 author: aaron
 date: 2023-05-20T10:20:02
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["iterator pattern", "composite pattern", "factory method pattern"]
 ---
 
 

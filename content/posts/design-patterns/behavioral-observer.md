@@ -1,9 +1,10 @@
 ---
-title: Observer
-slug: Observer
+title: Observer Pattern
+slug: Observer Pattern
 author: aaron
 date: 2023-05-20T10:20:05
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["observer pattern", "mediator pattern"]
 ---
 
 

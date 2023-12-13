@@ -1,9 +1,10 @@
 ---
-title: Flyweight
-slug: Flyweight
+title: Flyweight Pattern
+slug: Flyweight Pattern
 author: aaron
 date: 2023-05-20T10:10:05
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["flyweight pattern", "proxy pattern", "composite pattern", "factory pattern", "decorator pattern", "iterator pattern"]
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: Template Method
-slug: Template Method
+title: Template Method Pattern
+slug: Template Method Pattern
 author: aaron
 date: 2023-05-20T10:20:08
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["template method pattern", "factory method pattern", "strategy pattern"]
 ---
 
 

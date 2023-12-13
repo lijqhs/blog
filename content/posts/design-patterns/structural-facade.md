@@ -1,9 +1,10 @@
 ---
-title: Facade
-slug: Facade
+title: Facade Pattern
+slug: Facade Pattern
 author: aaron
 date: 2023-05-20T10:10:04
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["facade pattern", "adapter pattern", "composite pattern", "singleton pattern", "mediator pattern", "factory pattern"]
 ---
 
 

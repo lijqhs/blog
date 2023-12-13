@@ -1,9 +1,10 @@
 ---
-title: Abstract Factory
-slug: Abstract Factory
+title: Abstract Factory Pattern
+slug: Abstract Factory Pattern
 author: aaron
 date: 2023-05-20T10:00:01
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["abstract factory pattern", "factory method pattern"]
 ---
 
 

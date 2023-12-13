@@ -1,9 +1,10 @@
 ---
-title: Factory Method
-slug: Factory Method
+title: Factory Method Pattern
+slug: Factory Method Pattern
 author: aaron
 date: 2023-05-20T10:00:00
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["factory method pattern", "abstract factory pattern", "singleton pattern", "template method pattern", "composite pattern", "strategy pattern"]
 ---
 
 

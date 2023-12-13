@@ -32,15 +32,15 @@ languages:
                 - name: Search
                   url: search/
                   weight: 10
-                - name: Tags
-                  url: tags/
-                  weight: 10
-                # - name: Design Patterns
-                #   url: design-patterns/
-                #   weight: 20
                 - name: Series
                   url: series/
                   weight: 20
+                - name: Tags
+                  url: tags/
+                  weight: 30
+                # - name: Design Patterns
+                #   url: design-patterns/
+                #   weight: 20
                 - name: Home
                   url: https://www.aaronnotes.com
                 # - name: WiKi
@@ -128,7 +128,7 @@ params:
     ShowRssButtonInSectionTermList: true
     ShowToc: true
     # comments: false
-    images: ["https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"]
+    images: ["https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"]
 
     profileMode:
         enabled: false
@@ -177,9 +177,9 @@ params:
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
     #     safari_pinned_tab: "<link / abs url>"
-        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
-        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
-        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.5.2/img/icons/boat.jpg"
+        favicon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
+        apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
+        safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
 
     # cover:
         # hidden: true # hide everywhere but not in structured data

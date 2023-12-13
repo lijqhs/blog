@@ -1,9 +1,10 @@
 ---
-title: Memento
-slug: Memento
+title: Memento Pattern
+slug: Memento Pattern
 author: aaron
 date: 2023-05-20T10:20:04
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["memento pattern", "command pattern", "prototype pattern"]
 ---
 
 

@@ -1,9 +1,10 @@
 ---
-title: Composite
-slug: Composite
+title: Composite Pattern
+slug: Composite Pattern
 author: aaron
 date: 2023-05-20T10:10:02
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["composite pattern", "iterator pattern", "visitor pattern", "strategy pattern", "decorator pattern", "chain of responsibility pattern"]
 ---
 
 

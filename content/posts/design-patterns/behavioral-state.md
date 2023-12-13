@@ -1,9 +1,10 @@
 ---
-title: State
-slug: State
+title: State Pattern
+slug: State Pattern
 author: aaron
 date: 2023-05-20T10:20:06
-tags: ["python", "design pattern"]
+series: ["Design Patterns"]
+tags: ["state pattern", "strategy pattern"]
 ---
 
 
