@@ -6,7 +6,7 @@ date: 2023-05-20T10:20:09
 series: ["Design Patterns"]
 cover: 
     image: https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/gallery/ca/eugene-aikimov-azqdBkIHVo0-unsplash.jpg
-    hidden: false
+    hidden: true
 # tags: ["visitor pattern", "composite pattern", "iterator pattern", "strategy pattern"]
 ---
 
