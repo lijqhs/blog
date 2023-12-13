@@ -189,10 +189,10 @@ params:
         apple_touch_icon: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
         safari_pinned_tab: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
 
-    cover:
-        hidden: false # hide everywhere but not in structured data
-        hiddenInList: true # hide on list pages and home
-        hiddenInSingle: false # hide on single page
+    # cover:
+    #     hidden: false # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: false # hide on single page
 
     fuseOpts:
         isCaseSensitive: false
