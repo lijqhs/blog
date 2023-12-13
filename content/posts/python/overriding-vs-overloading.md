@@ -4,6 +4,7 @@ slug: overriding-vs-overloading
 author: aaron
 date: 2023-04-12
 tags: ["python", "oop"]
+categories: ["Python Tips"]
 ---
 
 
