@@ -4,6 +4,7 @@ slug: array
 author: aaron
 date: 2023-04-01
 tags: ["python", "numpy"]
+categories: ["Python Tips"]
 # ShowBreadCrumbs: false
 # draft: true
 ---
