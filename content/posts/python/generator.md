@@ -4,6 +4,7 @@ slug: generator
 author: aaron
 date: 2023-04-07
 tags: ["python", "generator", "fibonacci"]
+categories: ["Python Tips"]
 ---
 
 In Python, a generator is a special type of function that can be used to create iterable sequences of values on-the-fly. Unlike regular functions, which compute and return a value immediately, generators can generate a sequence of values over time, using the yield keyword.
