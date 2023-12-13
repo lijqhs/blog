@@ -4,6 +4,7 @@ slug: dependency-injection
 author: aaron
 date: 2023-04-05
 tags: ["python", "dependency injection", "design pattern"]
+categories: ["Python Tips"]
 ---
 
 
