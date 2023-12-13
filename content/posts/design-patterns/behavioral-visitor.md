@@ -4,7 +4,7 @@ slug: Visitor Pattern
 author: aaron
 date: 2023-05-20T10:20:09
 series: ["Design Patterns"]
-cover: https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/eugene-aikimov-azqdBkIHVo0-unsplash
+cover: "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/eugene-aikimov-azqdBkIHVo0-unsplash"
 # tags: ["visitor pattern", "composite pattern", "iterator pattern", "strategy pattern"]
 ---
 
