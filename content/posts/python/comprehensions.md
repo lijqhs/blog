@@ -3,7 +3,7 @@ title: Comprehensions
 slug: comprehensions
 author: aaron
 date: 2023-05-03
-tags: ["python", "list comprehension", "dictionary comprehension", "set comprehension", "generator"]
+tags: ["python", "comprehension", "generator"]
 ---
 
 
