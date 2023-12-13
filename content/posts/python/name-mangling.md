@@ -2,7 +2,7 @@
 title: Name Mangling
 slug: name-mangling
 author: aaron
-date: 2023-05-10
+date: 2023-04-10
 tags: ["python", "name mangling"]
 ---
 
