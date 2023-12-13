@@ -4,6 +4,7 @@ slug: itertools
 author: aaron
 date: 2023-04-08
 tags: ["python", "itertools"]
+categories: ["Python Tips"]
 ---
 
 
