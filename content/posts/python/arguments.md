@@ -4,6 +4,7 @@ slug: arguments
 author: aaron
 date: 2023-04-02
 tags: ["python"]
+categories: ["Python Tips"]
 ---
 
 In Python, there are several ways to pass arguments to a function, including positional arguments, keyword arguments, default arguments, variable-length argument lists (`*args`), and variable-length keyword argument dictionaries (`**kwargs`). The choice of argument passing method depends on the specific requirements of the function and the nature of the data being passed.
