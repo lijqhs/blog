@@ -4,7 +4,7 @@ slug: Flyweight Pattern
 author: aaron
 date: 2023-05-20T10:10:05
 series: ["Design Patterns"]
-tags: ["flyweight pattern", "proxy pattern", "composite pattern", "factory pattern", "decorator pattern", "iterator pattern"]
+# tags: ["flyweight pattern", "proxy pattern", "composite pattern", "factory pattern", "decorator pattern", "iterator pattern"]
 ---
 
 

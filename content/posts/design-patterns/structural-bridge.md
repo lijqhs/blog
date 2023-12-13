@@ -4,7 +4,7 @@ slug: Bridge Pattern
 author: aaron
 date: 2023-05-20T10:10:01
 series: ["Design Patterns"]
-tags: ["bridge pattern", "adapter pattern", "composite pattern", "strategy pattern", "template method pattern", "decorator pattern"]
+# tags: ["bridge pattern", "adapter pattern", "composite pattern", "strategy pattern", "template method pattern", "decorator pattern"]
 ---
 
 

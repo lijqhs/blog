@@ -4,7 +4,7 @@ slug: Abstract Factory Pattern
 author: aaron
 date: 2023-05-20T10:00:01
 series: ["Design Patterns"]
-tags: ["abstract factory pattern", "factory method pattern"]
+# tags: ["abstract factory pattern", "factory method pattern"]
 ---
 
 

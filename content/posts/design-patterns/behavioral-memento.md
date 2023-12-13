@@ -4,7 +4,7 @@ slug: Memento Pattern
 author: aaron
 date: 2023-05-20T10:20:04
 series: ["Design Patterns"]
-tags: ["memento pattern", "command pattern", "prototype pattern"]
+# tags: ["memento pattern", "command pattern", "prototype pattern"]
 ---
 
 

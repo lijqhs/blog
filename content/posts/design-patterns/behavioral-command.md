@@ -4,7 +4,7 @@ slug: Command Pattern
 author: aaron
 date: 2023-05-20T10:20:01
 series: ["Design Patterns"]
-tags: ["command pattern", "observer pattern", "memento pattern"]
+# tags: ["command pattern", "observer pattern", "memento pattern"]
 ---
 
 

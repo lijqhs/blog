@@ -4,7 +4,7 @@ slug: Proxy Pattern
 author: aaron
 date: 2023-05-20T10:10:06
 series: ["Design Patterns"]
-tags: ["proxy pattern", "adapter pattern", "singleton pattern", "flyweight pattern", "observer pattern"]
+# tags: ["proxy pattern", "adapter pattern", "singleton pattern", "flyweight pattern", "observer pattern"]
 ---
 
 

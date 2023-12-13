@@ -4,7 +4,7 @@ slug: Template Method Pattern
 author: aaron
 date: 2023-05-20T10:20:08
 series: ["Design Patterns"]
-tags: ["template method pattern", "factory method pattern", "strategy pattern"]
+# tags: ["template method pattern", "factory method pattern", "strategy pattern"]
 ---
 
 

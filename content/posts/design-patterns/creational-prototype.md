@@ -4,7 +4,7 @@ slug: Prototype Pattern
 author: aaron
 date: 2023-05-20T10:00:03
 series: ["Design Patterns"]
-tags: ["prototype pattern", "abstract factory pattern", "singleton pattern", "builder pattern", "composite pattern", "memento pattern"]
+# tags: ["prototype pattern", "abstract factory pattern", "singleton pattern", "builder pattern", "composite pattern", "memento pattern"]
 ---
 
 

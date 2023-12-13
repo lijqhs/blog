@@ -4,7 +4,7 @@ slug: Strategy Pattern
 author: aaron
 date: 2023-05-20T10:20:07
 series: ["Design Patterns"]
-tags: ["strategy pattern", "template method pattern", "factory method pattern", "composite pattern"]
+# tags: ["strategy pattern", "template method pattern", "factory method pattern", "composite pattern"]
 ---
 
 

@@ -4,7 +4,7 @@ slug: Adapter Pattern
 author: aaron
 date: 2023-05-20T10:10:00
 series: ["Design Patterns"]
-tags: ["adapter pattern", "bridge pattern", "proxy pattern", "facade pattern", "decorator pattern"]
+# tags: ["adapter pattern", "bridge pattern", "proxy pattern", "facade pattern", "decorator pattern"]
 ---
 
 

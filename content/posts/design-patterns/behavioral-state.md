@@ -4,7 +4,7 @@ slug: State Pattern
 author: aaron
 date: 2023-05-20T10:20:06
 series: ["Design Patterns"]
-tags: ["state pattern", "strategy pattern"]
+# tags: ["state pattern", "strategy pattern"]
 ---
 
 

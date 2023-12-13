@@ -4,7 +4,7 @@ slug: Builder Pattern
 author: aaron
 date: 2023-05-20T10:00:02
 series: ["Design Patterns"]
-tags: ["builder pattern", "abstract factory pattern", "factory method pattern", "composite pattern"]
+# tags: ["builder pattern", "abstract factory pattern", "factory method pattern", "composite pattern"]
 ---
 
 

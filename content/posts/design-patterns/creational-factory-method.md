@@ -4,7 +4,7 @@ slug: Factory Method Pattern
 author: aaron
 date: 2023-05-20T10:00:00
 series: ["Design Patterns"]
-tags: ["factory method pattern", "abstract factory pattern", "singleton pattern", "template method pattern", "composite pattern", "strategy pattern"]
+# tags: ["factory method pattern", "abstract factory pattern", "singleton pattern", "template method pattern", "composite pattern", "strategy pattern"]
 ---
 
 

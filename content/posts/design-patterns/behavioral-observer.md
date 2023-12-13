@@ -4,7 +4,7 @@ slug: Observer Pattern
 author: aaron
 date: 2023-05-20T10:20:05
 series: ["Design Patterns"]
-tags: ["observer pattern", "mediator pattern"]
+# tags: ["observer pattern", "mediator pattern"]
 ---
 
 

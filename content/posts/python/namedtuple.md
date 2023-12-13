@@ -3,7 +3,7 @@ title: Namedtuple
 slug: namedtuple
 author: aaron
 date: 2023-05-11
-tags: ["python", "namedtuple", "collections"]
+tags: ["python", "namedtuple"]
 ---
 
 

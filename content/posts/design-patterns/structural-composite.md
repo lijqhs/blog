@@ -4,7 +4,7 @@ slug: Composite Pattern
 author: aaron
 date: 2023-05-20T10:10:02
 series: ["Design Patterns"]
-tags: ["composite pattern", "iterator pattern", "visitor pattern", "strategy pattern", "decorator pattern", "chain of responsibility pattern"]
+# tags: ["composite pattern", "iterator pattern", "visitor pattern", "strategy pattern", "decorator pattern", "chain of responsibility pattern"]
 ---
 
 

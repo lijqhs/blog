@@ -4,7 +4,7 @@ slug: Chain of Responsibility Pattern
 author: aaron
 date: 2023-05-20T10:20:00
 series: ["Design Patterns"]
-tags: ["chain of responsibility pattern", "composite pattern", "command pattern"]
+# tags: ["chain of responsibility pattern", "composite pattern", "command pattern"]
 ---
 
 

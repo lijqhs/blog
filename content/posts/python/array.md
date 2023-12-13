@@ -3,7 +3,7 @@ title: Array
 slug: array
 author: aaron
 date: 2023-05-01
-tags: ["python", "array", "numpy"]
+tags: ["python", "numpy"]
 # ShowBreadCrumbs: false
 # draft: true
 ---

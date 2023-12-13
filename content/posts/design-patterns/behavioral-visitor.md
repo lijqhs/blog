@@ -4,7 +4,7 @@ slug: Visitor Pattern
 author: aaron
 date: 2023-05-20T10:20:09
 series: ["Design Patterns"]
-tags: ["visitor pattern", "composite pattern", "iterator pattern", "strategy pattern"]
+# tags: ["visitor pattern", "composite pattern", "iterator pattern", "strategy pattern"]
 ---
 
 

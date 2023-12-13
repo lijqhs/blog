@@ -4,7 +4,7 @@ slug: Iterator Pattern
 author: aaron
 date: 2023-05-20T10:20:02
 series: ["Design Patterns"]
-tags: ["iterator pattern", "composite pattern", "factory method pattern"]
+# tags: ["iterator pattern", "composite pattern", "factory method pattern"]
 ---
 
 

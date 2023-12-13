@@ -4,7 +4,7 @@ slug: Decorator Pattern
 author: aaron
 date: 2023-05-20T10:10:03
 series: ["Design Patterns"]
-tags: ["decorator pattern", "adapter pattern", "composite pattern", "strategy pattern", "template method pattern", "proxy pattern"]
+# tags: ["decorator pattern", "adapter pattern", "composite pattern", "strategy pattern", "template method pattern", "proxy pattern"]
 ---
 
 
