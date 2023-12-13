@@ -2,7 +2,7 @@
 title: Generator
 slug: generator
 author: aaron
-date: 2023-05-07
+date: 2023-04-07
 tags: ["python", "generator", "fibonacci"]
 ---
 
