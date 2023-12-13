@@ -20,6 +20,11 @@ languages:
     en:
         languageName: "English"
         weight: 1
+        title: Dev Blog
+        homeInfoParams:
+            Title: "Dev Blog"
+            Content: >
+                The Programming Jottings
         taxonomies:
           category: categories
           tag: tags
@@ -27,16 +32,19 @@ languages:
         menu:
             main:
                 - name: Archives
-                  url: archives
+                  url: archives/
                   weight: 5
-                - name: Search
-                  url: search/
+                - name: Categories
+                  url: categories/
                   weight: 10
                 - name: Series
                   url: series/
-                  weight: 20
+                  weight: 15
                 - name: Tags
                   url: tags/
+                  weight: 20
+                - name: Search
+                  url: search/
                   weight: 30
                 # - name: Design Patterns
                 #   url: design-patterns/
@@ -143,10 +151,10 @@ params:
             - name: Tags
               url: tags
 
-    homeInfoParams:
-        Title: "Dev Blog"
-        Content: >
-            The Programming Jottings
+    # homeInfoParams:
+    #     Title: "Dev Blog"
+    #     Content: >
+    #         The Programming Jottings
 
     socialIcons:
         - name: github
