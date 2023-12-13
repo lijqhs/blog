@@ -1,9 +1,10 @@
 ---
-title: Proxy
-slug: Proxy
+title: Proxy Pattern
+slug: Proxy Pattern
 author: aaron
 date: 2023-05-20T10:10:06
-tags: ["python", "design pattern"]
+tags: ["proxy pattern", "adapter pattern", "singleton pattern", "flyweight pattern", "observer pattern"]
+series: ["Design Patterns"]
 ---
 
 
