@@ -2,7 +2,7 @@
 title: Duck Typing
 slug: duck-typing
 author: aaron
-date: 2023-05-06
+date: 2023-04-06
 tags: ["python", "duck typing", "oop"]
 ---
 
