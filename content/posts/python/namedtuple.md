@@ -4,6 +4,7 @@ slug: namedtuple
 author: aaron
 date: 2023-04-11
 tags: ["python", "namedtuple"]
+categories: ["Python Tips"]
 ---
 
 
