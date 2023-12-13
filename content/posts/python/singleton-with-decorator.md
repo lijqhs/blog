@@ -4,6 +4,7 @@ slug: singleton-with-decorator
 author: aaron
 date: 2023-04-04
 tags: ["python", "decorator", "design pattern"]
+categories: ["Python Tips"]
 ---
 
 
