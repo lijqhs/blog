@@ -4,6 +4,7 @@ slug: monkey-patching
 author: aaron
 date: 2023-04-09
 tags: ["python", "monkey patching"]
+categories: ["Python Tips"]
 ---
 
 
