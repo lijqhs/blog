@@ -4,6 +4,7 @@ slug: duck-typing
 author: aaron
 date: 2023-04-06
 tags: ["python", "duck typing", "oop"]
+categories: ["Python Tips"]
 ---
 
 
