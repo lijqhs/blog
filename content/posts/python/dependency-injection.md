@@ -2,7 +2,7 @@
 title: Dependency Injection
 slug: dependency-injection
 author: aaron
-date: 2023-05-05
+date: 2023-04-05
 tags: ["python", "dependency injection", "design pattern"]
 ---
 
