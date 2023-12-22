@@ -21,10 +21,6 @@ languages:
         languageName: "English"
         weight: 1
         title: Dev Blog
-        homeInfoParams:
-            Title: "Dev Blog"
-            Content: >
-                The Programming Jottings
         taxonomies:
           category: categories
           tag: tags
@@ -151,6 +147,10 @@ params:
             - name: Tags
               url: tags
 
+    homeInfoParams:
+        Title: "Dev Blog"
+        Content: >
+            The Programming Jottings
     # homeInfoParams:
     #     Title: "Dev Blog"
     #     Content: >
