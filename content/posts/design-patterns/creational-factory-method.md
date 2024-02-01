@@ -16,8 +16,6 @@ The Factory Method pattern is useful when you have a superclass that doesn't kno
 
 ## Example
 
-I apologize for the confusion in my previous response. You are correct that my previous example did not demonstrate the Factory Method pattern correctly. Here is a corrected example:
-
 ```python
 from abc import ABC, abstractmethod
 
