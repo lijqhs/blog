@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/</link>
+    <description>Recent content in Tags on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>decorator</title>
+      <link>https://blog.aaronnotes.com/tags/decorator/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/decorator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functools</title>
+      <link>https://blog.aaronnotes.com/tags/functools/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/functools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://blog.aaronnotes.com/tags/python/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oop</title>
+      <link>https://blog.aaronnotes.com/tags/oop/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/oop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>namedtuple</title>
+      <link>https://blog.aaronnotes.com/tags/namedtuple/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/namedtuple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>name mangling</title>
+      <link>https://blog.aaronnotes.com/tags/name-mangling/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/name-mangling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monkey patching</title>
+      <link>https://blog.aaronnotes.com/tags/monkey-patching/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/monkey-patching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>itertools</title>
+      <link>https://blog.aaronnotes.com/tags/itertools/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/itertools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fibonacci</title>
+      <link>https://blog.aaronnotes.com/tags/fibonacci/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/fibonacci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generator</title>
+      <link>https://blog.aaronnotes.com/tags/generator/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>duck typing</title>
+      <link>https://blog.aaronnotes.com/tags/duck-typing/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/duck-typing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dependency injection</title>
+      <link>https://blog.aaronnotes.com/tags/dependency-injection/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design pattern</title>
+      <link>https://blog.aaronnotes.com/tags/design-pattern/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/design-pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comprehension</title>
+      <link>https://blog.aaronnotes.com/tags/comprehension/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/comprehension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numpy</title>
+      <link>https://blog.aaronnotes.com/tags/numpy/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

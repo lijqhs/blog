@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Prototype Pattern | Dev Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.
+What is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects.">
+<meta name="author" content="aaron">
+<link rel="canonical" href="https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.aaronnotes.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.aaronnotes.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPL8B8N9RY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XPL8B8N9RY', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Prototype Pattern" />
+<meta property="og:description" content="Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.
+What is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/" /><meta property="og:image" content="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-20T10:00:03+00:00" />
+<meta property="article:modified_time" content="2023-05-20T10:00:03+00:00" /><meta property="og:site_name" content="Dev Blog" />
+<meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/list-of-design-patterns/" /><meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/visitor-pattern/" /><meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/template-method-pattern/" /><meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/strategy-pattern/" /><meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/state-pattern/" /><meta property="og:see_also" content="https://blog.aaronnotes.com/posts/design-patterns/observer-pattern/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"/>
+
+<meta name="twitter:title" content="Prototype Pattern"/>
+<meta name="twitter:description" content="Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.
+What is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.aaronnotes.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Prototype Pattern",
+      "item": "https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Prototype Pattern",
+  "name": "Prototype Pattern",
+  "description": "Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.\nWhat is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.\nWhat is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects. The existing object serves as a prototype, and the new object is created by cloning the prototype. This pattern is useful when creating objects is costly or complex, and the new objects have similar attributes to existing objects.\nThe Prototype Design Pattern defines an interface for cloning objects, which is implemented by concrete classes. The concrete classes create a clone of the prototype object and then modify it as required. This pattern allows the creation of new objects by copying existing objects, which is faster and less error-prone than creating new objects from scratch.\nWhen to use the Prototype Design Pattern The Prototype Design Pattern can be used in the following scenarios:\n When creating objects is costly or complex When the new objects have similar attributes to existing objects When a system needs to be independent of how its products are created, composed, and represented When a system needs to be configured with objects at runtime  Examples Let’sconsider an example to understand the Prototype Design Pattern better. Suppose we have a prototype object, Car, which has various attributes such as color, model, engine type, etc. We want to create new cars with similar attributes as the prototype Car. In this case, we can use the Prototype Design Pattern to create new cars by cloning the prototype Car.\nJava example public abstract class Car implements Cloneable { protected String color; protected String model; protected String engineType; public abstract void drive(); public Object clone() { Object clone = null; try { clone = super.clone(); } catch (CloneNotSupportedException e) { e.printStackTrace(); } return clone; } } public class Hatchback extends Car { public Hatchback() { this.color = \"Red\"; this.model = \"Honda Jazz\"; this.engineType = \"Petrol\"; } @Override public void drive() { System.out.println(\"Driving a Hatchback car\"); } } public class Sedan extends Car { public Sedan() { this.color = \"Blue\"; this.model = \"Volkswagen Vento\"; this.engineType = \"Diesel\"; } @Override public void drive() { System.out.println(\"Driving a Sedan car\"); } } public class CarFactory { private static MapcarMap = new HashMap(); static { carMap.put(\"Hatchback\", new Hatchback()); carMap.put(\"Sedan\", new Sedan()); } public static Car getCar(String carType) { return (Car) carMap.get(carType).clone(); } }  In the above code, we have a Car abstract class that implements the Cloneable interface. We have two concrete classes, Hatchback and Sedan, that extend the Car class and implement the drive() method. We also have a CarFactory class that has a HashMap of Car objects and a getCar() method that returns a cloned Car object based on the carType parameter passed.\nPython example import copy class Car: def __init__(self, color, model, engine_type): self.color = color self.model = model self.engine_type = engine_type def drive(self): print(f\"Driving a {self.color} {self.model} car with a {self.engine_type} engine\") def clone(self): return copy.deepcopy(self) class CarFactory: def __init__(self): self.car_map = {} def register_car(self, car_name, car): self.car_map[car_name] = car def unregister_car(self, car_name): del self.car_map[car_name] def get_car(self, car_name): return self.car_map[car_name].clone() # Create a car factory factory = CarFactory() # Create a prototype car prototype_car = Car(\"Red\", \"Honda Jazz\", \"Petrol\") # Register the prototype car with the factory factory.register_car(\"Hatchback\", prototype_car) # Create a new car by cloning the prototype car new_car = factory.get_car(\"Hatchback\") # Modify the new car's color new_car.color = \"Blue\" # Drive the prototype car and the new car prototype_car.drive() new_car.drive()  In this example, we define a Car class with a clone method thatreturns a deep copy of the object using the copy module. We also define a CarFactory class that keeps track of registered cars and can create new cars by cloning the registered prototypes.\nWe create a prototype car and register it with the factory. Then, we create a new car by cloning the prototype using the factory’s get_car method. We modify the new car’s color to “Blue” and then drive both the prototype car and the new car.\nThe output of running this code would be:\nDriving a Red Honda Jazz car with a Petrol engine Driving a Blue Honda Jazz car with a Petrol engine  As we can see, the prototype car and the new car have the same model and engine type, but the new car has a different color. This demonstrates the ability of the Prototype Design Pattern to create new objects with similar attributes to existing objects.\nPros and Cons of the Prototype Design Pattern Pros:\n Reduces the need for creating objects from scratch, which is faster and less error-prone Allows the creation of new objects with similar attributes to existing objects Improves performance by avoiding costly object creation Allows dynamic configuration of objects at runtime  Cons:\n Cloning objects can be complex and may require deep cloning to avoid shared references to mutable objects Requires implementing the Cloneable interface, which can be restrictive in some cases Can lead to excessive use of memory if many objects need to be cloned  Related Design Patterns The Prototype pattern is a creational design pattern that allows you to create new objects by cloning existing ones. Instead of creating objects from scratch, the Prototype pattern provides a way to create copies of an existing object and customize them as needed. This pattern is useful when creating new objects can be expensive or complex.\nThe Prototype pattern can be related to other design patterns in the following ways:\n  Abstract Factory Pattern: The Abstract Factory pattern and the Prototype pattern can be used together to create families of related objects. The Abstract Factory provides an interface for creating families of objects, while the Prototype pattern allows you to clone existing objects within those families.\n  Singleton Pattern: The Singleton pattern and the Prototype pattern are two different approaches to managing object creation. The Singleton pattern ensures that only one instance of a class exists, while the Prototype pattern allows you to create multiple instances of a class by cloning existing objects.\n  Builder Pattern: The Builder pattern and the Prototype pattern are both creational patterns, but they serve different purposes. The Builder pattern is used to construct complex objects step by step, while the Prototype pattern focuses on creating copies of existing objects.\n  Composite Pattern: The Prototype pattern can be used in conjunction with the Composite pattern to create a tree-like structure of objects. The Prototype pattern allows you to clone and customize objects, and the Composite pattern enables you to create a hierarchy of these objects.\n  Memento Pattern: The Memento pattern and the Prototype pattern can be used together to capture and restore the state of an object. The Prototype pattern allows you to create a clone of an object, which can then be stored as a Memento and later restored to its previous state.\n  It’s important to note that the Prototype pattern emphasizes the creation of objects through cloning, while the mentioned patterns have different focuses and serve different purposes. The choice of which patterns to use in conjunction with the Prototype pattern depends on the specific requirements and constraints of the system being designed.\n",
+  "wordCount" : "1230",
+  "inLanguage": "en",
+  "datePublished": "2023-05-20T10:00:03Z",
+  "dateModified": "2023-05-20T10:00:03Z",
+  "author":{
+    "@type": "Person",
+    "name": "aaron"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.aaronnotes.com/" accesskey="h" title="Dev Blog (Alt + H)">Dev Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.aaronnotes.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/series/" title="Series">
+                    <span>Series</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.aaronnotes.com" title="Home">
+                    <span>Home</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Prototype Pattern
+    </h1>
+    <div class="post-meta"><span title='2023-05-20 10:00:03 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-the-prototype-design-pattern" aria-label="What is the Prototype Design Pattern">What is the Prototype Design Pattern</a></li>
+                <li>
+                    <a href="#when-to-use-the-prototype-design-pattern" aria-label="When to use the Prototype Design Pattern">When to use the Prototype Design Pattern</a></li>
+                <li>
+                    <a href="#examples" aria-label="Examples">Examples</a><ul>
+                        
+                <li>
+                    <a href="#java-example" aria-label="Java example">Java example</a></li>
+                <li>
+                    <a href="#python-example" aria-label="Python example">Python example</a></li></ul>
+                </li>
+                <li>
+                    <a href="#pros-and-cons-of-the-prototype-design-pattern" aria-label="Pros and Cons of the Prototype Design Pattern">Pros and Cons of the Prototype Design Pattern</a></li>
+                <li>
+                    <a href="#related-design-patterns" aria-label="Related Design Patterns">Related Design Patterns</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.</p>
+<h2 id="what-is-the-prototype-design-pattern">What is the Prototype Design Pattern<a hidden class="anchor" aria-hidden="true" href="#what-is-the-prototype-design-pattern">#</a></h2>
+<p>The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects. The existing object serves as a prototype, and the new object is created by cloning the prototype. This pattern is useful when creating objects is costly or complex, and the new objects have similar attributes to existing objects.</p>
+<p>The Prototype Design Pattern defines an interface for cloning objects, which is implemented by concrete classes. The concrete classes create a clone of the prototype object and then modify it as required. This pattern allows the creation of new objects by copying existing objects, which is faster and less error-prone than creating new objects from scratch.</p>
+<h2 id="when-to-use-the-prototype-design-pattern">When to use the Prototype Design Pattern<a hidden class="anchor" aria-hidden="true" href="#when-to-use-the-prototype-design-pattern">#</a></h2>
+<p>The Prototype Design Pattern can be used in the following scenarios:</p>
+<ul>
+<li>When creating objects is costly or complex</li>
+<li>When the new objects have similar attributes to existing objects</li>
+<li>When a system needs to be independent of how its products are created, composed, and represented</li>
+<li>When a system needs to be configured with objects at runtime</li>
+</ul>
+<h2 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h2>
+<p>Let&rsquo;sconsider an example to understand the Prototype Design Pattern better. Suppose we have a prototype object, Car, which has various attributes such as color, model, engine type, etc. We want to create new cars with similar attributes as the prototype Car. In this case, we can use the Prototype Design Pattern to create new cars by cloning the prototype Car.</p>
+<h3 id="java-example">Java example<a hidden class="anchor" aria-hidden="true" href="#java-example">#</a></h3>
+<pre><code class="language-java">public abstract class Car implements Cloneable {
+    protected String color;
+    protected String model;
+    protected String engineType;
+
+    public abstract void drive();
+
+    public Object clone() {
+        Object clone = null;
+        try {
+            clone = super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return clone;
+    }
+}
+
+public class Hatchback extends Car {
+    public Hatchback() {
+        this.color = &quot;Red&quot;;
+        this.model = &quot;Honda Jazz&quot;;
+        this.engineType = &quot;Petrol&quot;;
+    }
+
+    @Override
+    public void drive() {
+        System.out.println(&quot;Driving a Hatchback car&quot;);
+    }
+}
+
+public class Sedan extends Car {
+    public Sedan() {
+        this.color = &quot;Blue&quot;;
+        this.model = &quot;Volkswagen Vento&quot;;
+        this.engineType = &quot;Diesel&quot;;
+    }
+
+    @Override
+    public void drive() {
+        System.out.println(&quot;Driving a Sedan car&quot;);
+    }
+}
+
+public class CarFactory {
+    private static Map&lt;String, Car&gt;carMap = new HashMap&lt;&gt;();
+
+    static {
+        carMap.put(&quot;Hatchback&quot;, new Hatchback());
+        carMap.put(&quot;Sedan&quot;, new Sedan());
+    }
+
+    public static Car getCar(String carType) {
+        return (Car) carMap.get(carType).clone();
+    }
+}
+</code></pre>
+<p>In the above code, we have a Car abstract class that implements the Cloneable interface. We have two concrete classes, Hatchback and Sedan, that extend the Car class and implement the drive() method. We also have a CarFactory class that has a HashMap of Car objects and a getCar() method that returns a cloned Car object based on the carType parameter passed.</p>
+<h3 id="python-example">Python example<a hidden class="anchor" aria-hidden="true" href="#python-example">#</a></h3>
+<pre><code class="language-python">import copy
+
+class Car:
+    def __init__(self, color, model, engine_type):
+        self.color = color
+        self.model = model
+        self.engine_type = engine_type
+
+    def drive(self):
+        print(f&quot;Driving a {self.color} {self.model} car with a {self.engine_type} engine&quot;)
+
+    def clone(self):
+        return copy.deepcopy(self)
+
+class CarFactory:
+    def __init__(self):
+        self.car_map = {}
+
+    def register_car(self, car_name, car):
+        self.car_map[car_name] = car
+
+    def unregister_car(self, car_name):
+        del self.car_map[car_name]
+
+    def get_car(self, car_name):
+        return self.car_map[car_name].clone()
+
+# Create a car factory
+factory = CarFactory()
+
+# Create a prototype car
+prototype_car = Car(&quot;Red&quot;, &quot;Honda Jazz&quot;, &quot;Petrol&quot;)
+
+# Register the prototype car with the factory
+factory.register_car(&quot;Hatchback&quot;, prototype_car)
+
+# Create a new car by cloning the prototype car
+new_car = factory.get_car(&quot;Hatchback&quot;)
+
+# Modify the new car's color
+new_car.color = &quot;Blue&quot;
+
+# Drive the prototype car and the new car
+prototype_car.drive()
+new_car.drive()
+</code></pre>
+<p>In this example, we define a <code>Car</code> class with a <code>clone</code> method thatreturns a deep copy of the object using the <code>copy</code> module. We also define a <code>CarFactory</code> class that keeps track of registered cars and can create new cars by cloning the registered prototypes.</p>
+<p>We create a prototype car and register it with the factory. Then, we create a new car by cloning the prototype using the factory&rsquo;s <code>get_car</code> method. We modify the new car&rsquo;s color to &ldquo;Blue&rdquo; and then drive both the prototype car and the new car.</p>
+<p>The output of running this code would be:</p>
+<pre><code>Driving a Red Honda Jazz car with a Petrol engine
+Driving a Blue Honda Jazz car with a Petrol engine
+</code></pre>
+<p>As we can see, the prototype car and the new car have the same model and engine type, but the new car has a different color. This demonstrates the ability of the Prototype Design Pattern to create new objects with similar attributes to existing objects.</p>
+<h2 id="pros-and-cons-of-the-prototype-design-pattern">Pros and Cons of the Prototype Design Pattern<a hidden class="anchor" aria-hidden="true" href="#pros-and-cons-of-the-prototype-design-pattern">#</a></h2>
+<p>Pros:</p>
+<ul>
+<li>Reduces the need for creating objects from scratch, which is faster and less error-prone</li>
+<li>Allows the creation of new objects with similar attributes to existing objects</li>
+<li>Improves performance by avoiding costly object creation</li>
+<li>Allows dynamic configuration of objects at runtime</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Cloning objects can be complex and may require deep cloning to avoid shared references to mutable objects</li>
+<li>Requires implementing the Cloneable interface, which can be restrictive in some cases</li>
+<li>Can lead to excessive use of memory if many objects need to be cloned</li>
+</ul>
+<h2 id="related-design-patterns">Related Design Patterns<a hidden class="anchor" aria-hidden="true" href="#related-design-patterns">#</a></h2>
+<p>The Prototype pattern is a creational design pattern that allows you to create new objects by cloning existing ones. Instead of creating objects from scratch, the Prototype pattern provides a way to create copies of an existing object and customize them as needed. This pattern is useful when creating new objects can be expensive or complex.</p>
+<p>The Prototype pattern can be related to other design patterns in the following ways:</p>
+<ol>
+<li>
+<p>Abstract Factory Pattern: The Abstract Factory pattern and the Prototype pattern can be used together to create families of related objects. The Abstract Factory provides an interface for creating families of objects, while the Prototype pattern allows you to clone existing objects within those families.</p>
+</li>
+<li>
+<p>Singleton Pattern: The Singleton pattern and the Prototype pattern are two different approaches to managing object creation. The Singleton pattern ensures that only one instance of a class exists, while the Prototype pattern allows you to create multiple instances of a class by cloning existing objects.</p>
+</li>
+<li>
+<p>Builder Pattern: The Builder pattern and the Prototype pattern are both creational patterns, but they serve different purposes. The Builder pattern is used to construct complex objects step by step, while the Prototype pattern focuses on creating copies of existing objects.</p>
+</li>
+<li>
+<p>Composite Pattern: The Prototype pattern can be used in conjunction with the Composite pattern to create a tree-like structure of objects. The Prototype pattern allows you to clone and customize objects, and the Composite pattern enables you to create a hierarchy of these objects.</p>
+</li>
+<li>
+<p>Memento Pattern: The Memento pattern and the Prototype pattern can be used together to capture and restore the state of an object. The Prototype pattern allows you to create a clone of an object, which can then be stored as a Memento and later restored to its previous state.</p>
+</li>
+</ol>
+<p>It&rsquo;s important to note that the Prototype pattern emphasizes the creation of objects through cloning, while the mentioned patterns have different focuses and serve different purposes. The choice of which patterns to use in conjunction with the Prototype pattern depends on the specific requirements and constraints of the system being designed.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://blog.aaronnotes.com/posts/design-patterns/singleton-pattern/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Singleton Pattern</span>
+  </a>
+  <a class="next" href="https://blog.aaronnotes.com/posts/design-patterns/builder-pattern/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Builder Pattern</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on x"
+        href="https://x.com/intent/tweet/?text=Prototype%20Pattern&amp;url=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f&amp;hashtags=">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"/>
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f&amp;title=Prototype%20Pattern&amp;summary=Prototype%20Pattern&amp;source=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f&title=Prototype%20Pattern">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on whatsapp"
+        href="https://api.whatsapp.com/send?text=Prototype%20Pattern%20-%20https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on telegram"
+        href="https://telegram.me/share/url?text=Prototype%20Pattern&amp;url=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Prototype Pattern on ycombinator"
+        href="https://news.ycombinator.com/submitlink?t=Prototype%20Pattern&u=https%3a%2f%2fblog.aaronnotes.com%2fposts%2fdesign-patterns%2fprototype-pattern%2f">
+        <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+            <path
+                d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://blog.aaronnotes.com/">Dev Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

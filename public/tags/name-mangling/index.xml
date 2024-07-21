@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>name mangling on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/name-mangling/</link>
+    <description>Recent content in name mangling on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/name-mangling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Name Mangling</title>
+      <link>https://blog.aaronnotes.com/posts/python/name-mangling/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/name-mangling/</guid>
+      <description>Name mangling is a feature in Python that is used to avoid naming conflicts in class hierarchies by adding a prefix to the name of a class member that starts with two underscores, but does not end with more than one underscore.
+When a member name is prefixed with two underscores, Python automatically rewrites the name in a way that makes it harder to access the member from outside the class.</description>
+    </item>
+    
+  </channel>
+</rss>

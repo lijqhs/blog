@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>generator on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/generator/</link>
+    <description>Recent content in generator on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/generator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generator</title>
+      <link>https://blog.aaronnotes.com/posts/python/generator/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/generator/</guid>
+      <description>In Python, a generator is a special type of function that can be used to create iterable sequences of values on-the-fly. Unlike regular functions, which compute and return a value immediately, generators can generate a sequence of values over time, using the yield keyword.
+Example: The following fib function is a generator function that generates a sequence of Fibonacci numbers up to a given limit index n.
+def fib(n): a = [0, 1] i = 0 while i &amp;lt;= n: yield a[i%2] a[i%2] = a[0] + a[1] i += 1  The yield keyword is used to return each generated Fibonacci number as it is generated, which makes the function a generator.</description>
+    </item>
+    
+    <item>
+      <title>Comprehensions</title>
+      <link>https://blog.aaronnotes.com/posts/python/comprehensions/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/comprehensions/</guid>
+      <description>In Python, there are several types of comprehensions that can be used to create new data structures from existing ones:
+list comprehension A list comprehension is a concise way to create a new list by iterating over an existing iterable and applying a transformation or filtering condition to each element. Here&amp;rsquo;s an example:
+my_list = [1, 2, 3, 4, 5] squared_list = [x*x for x in my_list] print(squared_list) # Output: [1, 4, 9, 16, 25]  In this example, the list comprehension [x*x for x in my_list] creates a new list by squaring each element of my_list.</description>
+    </item>
+    
+  </channel>
+</rss>

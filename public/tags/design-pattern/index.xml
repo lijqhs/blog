@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>design pattern on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/design-pattern/</link>
+    <description>Recent content in design pattern on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/design-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency Injection</title>
+      <link>https://blog.aaronnotes.com/posts/python/dependency-injection/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/dependency-injection/</guid>
+      <description>Dependency injection is a design pattern commonly used in software engineering that allows for the separation of concerns and promotes code reusability. It is a technique that enables the creation of loosely coupled code, which can be easily tested, maintained, and extended.
+What is Dependency Injection? Dependency injection is a design pattern that allows for the separation of concerns between different parts of a program or system. In dependency injection, the dependencies required by a component or module are injected into it at runtime, rather than being hardcoded into the component or module.</description>
+    </item>
+    
+    <item>
+      <title>Singleton with Decorator</title>
+      <link>https://blog.aaronnotes.com/posts/python/singleton-with-decorator/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/singleton-with-decorator/</guid>
+      <description>In Python, a singleton is a design pattern that restricts the instantiation of a class to a single object. A singleton class ensures that only one instance of the class is created and provides a global point of access to that instance.
+One way to implement a singleton in Python is to use a decorator. Here&amp;rsquo;s an example:
+def singleton(cls): instances = {} def get_instance(*args, **kwargs): if cls not in instances: instances[cls] = cls(*args, **kwargs) return instances[cls] return get_instance @singleton class MyClass: def __init__(self, x): self.</description>
+    </item>
+    
+  </channel>
+</rss>

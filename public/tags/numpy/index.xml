@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>numpy on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/numpy/</link>
+    <description>Recent content in numpy on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/numpy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array</title>
+      <link>https://blog.aaronnotes.com/posts/python/array/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/array/</guid>
+      <description>In Python, an array is a data structure that stores a collection of elements of the same data type. Unlike lists, which can contain elements of different data types, arrays can only contain elements of a single data type, such as integers, floats, or characters.
+Python supports two types of arrays: arrays provided by the built-in array module and arrays provided by the numpy module.
+built-in array module The array module provides a simple way to create and manipulate arrays of primitive data types, such as integers, floats, and characters.</description>
+    </item>
+    
+  </channel>
+</rss>

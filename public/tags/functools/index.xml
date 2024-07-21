@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>functools on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/functools/</link>
+    <description>Recent content in functools on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/functools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>functools</title>
+      <link>https://blog.aaronnotes.com/posts/python/functools/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/functools/</guid>
+      <description>functools provides a range of features that can greatly simplify your code and make it more efficient. The functools module is part of the Python standard library and provides higher-order functions, decorators, and other utilities for working with functions.
+functools.partial: Partial Function Application Partial function application is a technique where you create a new function by fixing certain arguments of an existing function, allowing you to provide only the remaining arguments when calling the new function.</description>
+    </item>
+    
+  </channel>
+</rss>

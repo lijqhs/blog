@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>comprehension on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/comprehension/</link>
+    <description>Recent content in comprehension on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/comprehension/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comprehensions</title>
+      <link>https://blog.aaronnotes.com/posts/python/comprehensions/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/comprehensions/</guid>
+      <description>In Python, there are several types of comprehensions that can be used to create new data structures from existing ones:
+list comprehension A list comprehension is a concise way to create a new list by iterating over an existing iterable and applying a transformation or filtering condition to each element. Here&amp;rsquo;s an example:
+my_list = [1, 2, 3, 4, 5] squared_list = [x*x for x in my_list] print(squared_list) # Output: [1, 4, 9, 16, 25]  In this example, the list comprehension [x*x for x in my_list] creates a new list by squaring each element of my_list.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Design Patterns | Dev Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Blog - https://www.aaronnotes.com/blog">
+<meta name="author" content="aaron">
+<link rel="canonical" href="https://blog.aaronnotes.com/series/design-patterns/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.aaronnotes.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.aaronnotes.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://blog.aaronnotes.com/series/design-patterns/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPL8B8N9RY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XPL8B8N9RY', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Design Patterns" />
+<meta property="og:description" content="Blog - https://www.aaronnotes.com/blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.aaronnotes.com/series/design-patterns/" /><meta property="og:image" content="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"/><meta property="og:site_name" content="Dev Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg"/>
+
+<meta name="twitter:title" content="Design Patterns"/>
+<meta name="twitter:description" content="Blog - https://www.aaronnotes.com/blog"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.aaronnotes.com/" accesskey="h" title="Dev Blog (Alt + H)">Dev Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.aaronnotes.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/series/" title="Series">
+                    <span>Series</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.aaronnotes.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.aaronnotes.com" title="Home">
+                    <span>Home</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Design Patterns
+    <a href="/series/design-patterns/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Chain of Responsibility Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Chain of Responsibility pattern is a behavioral pattern that allows you to create a chain of objects that can handle requests in a sequential order. Each object in the chain has the ability to handle the request, pass it on to the next object in the chain, or do both.
+The main idea behind the Chain of Responsibility pattern is to decouple the sender of the request from the receiver by creating a chain of objects, each of which has the ability to handle the request....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 10:20:00 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron</footer>
+  <a class="entry-link" aria-label="post link to Chain of Responsibility Pattern" href="https://blog.aaronnotes.com/posts/design-patterns/chain-of-responsibility-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Proxy Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Proxy pattern is a software design pattern that provides a surrogate or placeholder object to control access to another object. It is a structural pattern that allows you to create a class that represents the functionality of another class, while adding additional functionality such as access control, caching, or logging.
+The main idea behind the Proxy pattern is to provide a level of indirection between the client and the real object, allowing you to control access to the real object and add additional functionality without modifying the real object’s code....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 10:10:06 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron</footer>
+  <a class="entry-link" aria-label="post link to Proxy Pattern" href="https://blog.aaronnotes.com/posts/design-patterns/proxy-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Flyweight Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Flyweight pattern is a software design pattern that is used to minimize memory usage by sharing data between multiple objects. It is a structural pattern that is used to manage large numbers of small, similar objects in an efficient way.
+The main idea behind the Flyweight pattern is to share common parts of objects between multiple instances, rather than creating new instances for each object. This can help to reduce memory usage and improve the performance of your code....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 10:10:05 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron</footer>
+  <a class="entry-link" aria-label="post link to Flyweight Pattern" href="https://blog.aaronnotes.com/posts/design-patterns/flyweight-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Facade Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Facade pattern is a software design pattern that provides a simplified interface to a complex system of classes, interfaces, and objects. It is a structural pattern that is used to hide the complexities of a subsystem and provide a unified interface to the client.
+The main idea behind the Facade pattern is to provide a simplified, high-level interface that shields the client from the details of the subsystem. The Facade object acts as a mediator between the client and the subsystem, and it provides a single point of entry to the subsystem’s functionality....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 10:10:04 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron</footer>
+  <a class="entry-link" aria-label="post link to Facade Pattern" href="https://blog.aaronnotes.com/posts/design-patterns/facade-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Decorator Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Decorator pattern is a structural design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It involves creating a decorator class that wraps an existing class and provides additional functionality, while still maintaining the original interface of the object. This pattern is useful when you need to add functionality to an object at runtime, or when you want to add functionality to a class without modifying its code....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 10:10:03 +0000 UTC'>May 20, 2023</span>&nbsp;·&nbsp;aaron</footer>
+  <a class="entry-link" aria-label="post link to Decorator Pattern" href="https://blog.aaronnotes.com/posts/design-patterns/decorator-pattern/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://blog.aaronnotes.com/series/design-patterns/page/2/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://blog.aaronnotes.com/series/design-patterns/page/4/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://blog.aaronnotes.com/">Dev Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

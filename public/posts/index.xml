@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/posts/</link>
+    <description>Recent content in Posts on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>functools</title>
+      <link>https://blog.aaronnotes.com/posts/python/functools/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/functools/</guid>
+      <description>functools provides a range of features that can greatly simplify your code and make it more efficient. The functools module is part of the Python standard library and provides higher-order functions, decorators, and other utilities for working with functions.
+functools.partial: Partial Function Application Partial function application is a technique where you create a new function by fixing certain arguments of an existing function, allowing you to provide only the remaining arguments when calling the new function.</description>
+    </item>
+    
+    <item>
+      <title>List of Design Patterns</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/list-of-design-patterns/</link>
+      <pubDate>Sat, 20 May 2023 11:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/list-of-design-patterns/</guid>
+      <description>Creational patterns  Factory Method: Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. Abstract Factory: Provide an interface for creating families of related or dependent objects without specifying their concrete classes. Builder: Separate the construction of a complex object from its representation, allowing the same construction process to create various representations. Prototype: Specify the kinds of objects to create using a prototypical instance, and create new objects from the &amp;lsquo;skeleton&amp;rsquo; of an existing object, thus boosting performance and keeping memory footprints to a minimum.</description>
+    </item>
+    
+    <item>
+      <title>Visitor Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/visitor-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:09 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/visitor-pattern/</guid>
+      <description>The Visitor pattern is a behavioral pattern that separates an algorithm from an object structure on which it operates. The pattern allows you to add new operations or algorithms to an object structure without modifying the structure itself. The pattern achieves this by defining a separate object called a visitor, which can traverse an object structure and apply a specific operation to each element of the structure.
+The main idea behind the Visitor pattern is to provide a way to separate the concerns of an algorithm from the object structure it operates on.</description>
+    </item>
+    
+    <item>
+      <title>Template Method Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/template-method-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:08 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/template-method-pattern/</guid>
+      <description>The Template Method pattern is a behavioral pattern that defines the basic steps of an algorithm and allows subclasses to override some of the steps without changing the algorithm&amp;rsquo;s structure. The pattern defines a skeleton of an algorithm in a base class and allows subclasses to implement the details of the algorithm in their own way.
+The main idea behind the Template Method pattern is to provide a way to define a common algorithm structure that can be reused across different subclasses, while still allowing the subclasses to customize some parts of the algorithm&amp;rsquo;s behavior.</description>
+    </item>
+    
+    <item>
+      <title>Strategy Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/strategy-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:07 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/strategy-pattern/</guid>
+      <description>The Strategy pattern is a behavioral pattern that allows you to define a family of algorithms, encapsulate each one as an object, and make them interchangeable. The pattern allows you to vary the behavior of an object by selecting the appropriate algorithm at runtime.
+The main idea behind the Strategy pattern is to provide a way to change an object&amp;rsquo;s behavior without changing its implementation. Instead of implementing a single algorithm directly in the object, the Strategy pattern defines a set of algorithms as separate objects and allows the object to select the appropriate algorithm at runtime.</description>
+    </item>
+    
+    <item>
+      <title>State Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/state-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:06 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/state-pattern/</guid>
+      <description>The State pattern is a behavioral pattern that allows an object to alter its behavior when its internal state changes. The pattern encapsulates state-dependent behavior into separate classes, and the object&amp;rsquo;s behavior changes at runtime by switching between different state objects.
+The main idea behind the State pattern is to provide a way to change an object&amp;rsquo;s behavior without changing its class. Instead of using conditional statements to determine the behavior of an object based on its state, the State pattern uses a set of state classes that encapsulate the behavior and a context object that delegates to the current state.</description>
+    </item>
+    
+    <item>
+      <title>Observer Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/observer-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:05 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/observer-pattern/</guid>
+      <description>The Observer pattern is a behavioral pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+The main idea behind the Observer pattern is to provide a way for objects to be notified of changes in the state of another object without tightly coupling them together. This allows for a more flexible and maintainable design by separating the concerns of the objects.</description>
+    </item>
+    
+    <item>
+      <title>Memento Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/memento-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:04 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/memento-pattern/</guid>
+      <description>The Memento pattern is a behavioral pattern that allows you to capture and externalize an object&amp;rsquo;s internal state so that the object can be restored to that state later without violating encapsulation.
+The main idea behind the Memento pattern is to provide a way to save and restore an object&amp;rsquo;s state without exposing its internal structure. This allows you to save the state of an object at a particular point in time and restore it later if necessary.</description>
+    </item>
+    
+    <item>
+      <title>Mediator Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/mediator-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:03 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/mediator-pattern/</guid>
+      <description>The Mediator pattern is a behavioral pattern that defines an object that encapsulates how a set of objects interact with each other. It promotes loose coupling by keeping objects from referring to each other explicitly and allows for their interaction to be centralised in a mediator object.
+The main idea behind the Mediator pattern is to reduce the complexity of the interactions between objects by introducing a mediator object that handles the communication between them.</description>
+    </item>
+    
+    <item>
+      <title>Iterator Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/iterator-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:02 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/iterator-pattern/</guid>
+      <description>The Iterator pattern is a behavioral pattern that provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+The main idea behind the Iterator pattern is to provide a uniform interface for traversing different types of collections, such as arrays, lists, trees, and so on. This interface allows clients to iterate over the elements of a collection without having to know about the internal structure of the collection.</description>
+    </item>
+    
+    <item>
+      <title>Command Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/command-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:01 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/command-pattern/</guid>
+      <description>The Command pattern is a behavioral pattern that allows you to encapsulate a request as an object, thereby allowing you to parameterize clients with different requests, queue or log requests, and support undoable operations.
+The main idea behind the Command pattern is to separate the object that invokes the operation from the object that knows how to perform the operation. This separation allows you to decouple the client that sends the request from the receiver that performs the request, and also allows you to implement the request as an object that can be passed as a parameter, stored, or manipulated like any other object.</description>
+    </item>
+    
+    <item>
+      <title>Chain of Responsibility Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/chain-of-responsibility-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:20:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/chain-of-responsibility-pattern/</guid>
+      <description>The Chain of Responsibility pattern is a behavioral pattern that allows you to create a chain of objects that can handle requests in a sequential order. Each object in the chain has the ability to handle the request, pass it on to the next object in the chain, or do both.
+The main idea behind the Chain of Responsibility pattern is to decouple the sender of the request from the receiver by creating a chain of objects, each of which has the ability to handle the request.</description>
+    </item>
+    
+    <item>
+      <title>Proxy Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/proxy-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:06 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/proxy-pattern/</guid>
+      <description>The Proxy pattern is a software design pattern that provides a surrogate or placeholder object to control access to another object. It is a structural pattern that allows you to create a class that represents the functionality of another class, while adding additional functionality such as access control, caching, or logging.
+The main idea behind the Proxy pattern is to provide a level of indirection between the client and the real object, allowing you to control access to the real object and add additional functionality without modifying the real object&amp;rsquo;s code.</description>
+    </item>
+    
+    <item>
+      <title>Flyweight Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/flyweight-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:05 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/flyweight-pattern/</guid>
+      <description>The Flyweight pattern is a software design pattern that is used to minimize memory usage by sharing data between multiple objects. It is a structural pattern that is used to manage large numbers of small, similar objects in an efficient way.
+The main idea behind the Flyweight pattern is to share common parts of objects between multiple instances, rather than creating new instances for each object. This can help to reduce memory usage and improve the performance of your code.</description>
+    </item>
+    
+    <item>
+      <title>Facade Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/facade-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:04 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/facade-pattern/</guid>
+      <description>The Facade pattern is a software design pattern that provides a simplified interface to a complex system of classes, interfaces, and objects. It is a structural pattern that is used to hide the complexities of a subsystem and provide a unified interface to the client.
+The main idea behind the Facade pattern is to provide a simplified, high-level interface that shields the client from the details of the subsystem. The Facade object acts as a mediator between the client and the subsystem, and it provides a single point of entry to the subsystem&amp;rsquo;s functionality.</description>
+    </item>
+    
+    <item>
+      <title>Decorator Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/decorator-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:03 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/decorator-pattern/</guid>
+      <description>The Decorator pattern is a structural design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It involves creating a decorator class that wraps an existing class and provides additional functionality, while still maintaining the original interface of the object. This pattern is useful when you need to add functionality to an object at runtime, or when you want to add functionality to a class without modifying its code.</description>
+    </item>
+    
+    <item>
+      <title>Composite Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/composite-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:02 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/composite-pattern/</guid>
+      <description>The Composite pattern is a structural design pattern that allows you to compose objects into tree structures and represent part-whole hierarchies. It involves creating a common interface for both individual objects and groups of objects, and using recursion to traverse the object hierarchy. This pattern is useful when you need to work with complex hierarchies of objects and treat them uniformly.
+Example Here&amp;rsquo;s an example of how to implement the Composite pattern in Python:</description>
+    </item>
+    
+    <item>
+      <title>Bridge Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/bridge-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:01 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/bridge-pattern/</guid>
+      <description>The Bridge pattern is a structural design pattern that decouples an abstraction from its implementation, allowing them to vary independently. It involves creating two separate hierarchies, one for the abstraction and one for the implementation, and using composition to link them together. This pattern is useful when you need to separate the interface of an object from its implementation, or when you need to support multiple implementations of an object.</description>
+    </item>
+    
+    <item>
+      <title>Adapter Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/adapter-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:10:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/adapter-pattern/</guid>
+      <description>The Adapter pattern is a structural design pattern that allows incompatible interfaces to work together by creating a bridge between them. It involves creating an adapter class that wraps an existing class and provides a compatible interface that other classes can use. This pattern is useful when you need to reuse existing classes that have different interfaces, or when you need to integrate third-party libraries into your application that have incompatible interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Singleton Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/singleton-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:00:04 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/singleton-pattern/</guid>
+      <description>The Singleton pattern is a creational design pattern that ensures that a class has only one instance and provides a global point of access to that instance. This pattern is useful when you need to limit the number of instances of a class to one, and when you want to provide a single point of access to that instance throughout your application.
+Example Here&amp;rsquo;s an example of how to implement the Singleton pattern in Python:</description>
+    </item>
+    
+    <item>
+      <title>Prototype Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:00:03 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/prototype-pattern/</guid>
+      <description>Design patterns in software engineering are reusable solutions to common problems that arise in software development. One such design pattern is the Prototype Design Pattern, which is used to create new objects by cloning existing objects. In this article, we will explore what the Prototype Design Pattern is, when to use it, examples, pros and cons, and related design patterns.
+What is the Prototype Design Pattern The Prototype Design Pattern is a creational design pattern that allows the creation of new objects by copying existing objects.</description>
+    </item>
+    
+    <item>
+      <title>Builder Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/builder-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:00:02 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/builder-pattern/</guid>
+      <description>The Builder pattern is a creational design pattern that separates the construction of complex objects from their representation. It provides a step-by-step approach to building objects, allowing you to create different variations of an object while keeping the construction process consistent.
+Example Here&amp;rsquo;s an example of the Builder pattern implemented in Python:
+class Product: def __init__(self): self.part_a = None self.part_b = None def __str__(self): return f&amp;quot;Part A: {self.part_a}, Part B: {self.</description>
+    </item>
+    
+    <item>
+      <title>Abstract Factory Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/abstract-factory-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:00:01 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/abstract-factory-pattern/</guid>
+      <description>The Abstract Factory pattern is a creational design pattern that provides an interface for creating families of related or dependent objects, without specifying their concrete classes.
+In this pattern, there is an abstract factory class that defines a set of abstract methods for creating related or dependent objects. Each concrete factory class that implements the abstract factory class provides its own implementation of these abstract methods, which creates specific families of related objects.</description>
+    </item>
+    
+    <item>
+      <title>Factory Method Pattern</title>
+      <link>https://blog.aaronnotes.com/posts/design-patterns/factory-method-pattern/</link>
+      <pubDate>Sat, 20 May 2023 10:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/design-patterns/factory-method-pattern/</guid>
+      <description>&amp;ldquo;Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses.&amp;rdquo; (Gang Of Four)
+ The Factory Method design pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. In other words, it encapsulates object creation and delegates it to subclasses, rather than instantiating objects directly in the superclass.</description>
+    </item>
+    
+    <item>
+      <title>Overriding vs. Overloading</title>
+      <link>https://blog.aaronnotes.com/posts/python/overriding-vs-overloading/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/overriding-vs-overloading/</guid>
+      <description>Both overriding and overloading are concepts in object-oriented programming that allow you to define methods with the same name but different behavior. However, they differ in their implementation and purpose.
+Overriding Overriding is a mechanism by which a subclass can provide a different implementation of a method that is already defined in its superclass. When a method is overridden, the subclass&amp;rsquo;s implementation takes precedence over the superclass&amp;rsquo;s implementation, allowing you to customize the behavior of the method for the specific subclass.</description>
+    </item>
+    
+    <item>
+      <title>Namedtuple</title>
+      <link>https://blog.aaronnotes.com/posts/python/namedtuple/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/namedtuple/</guid>
+      <description>The namedtuple function is a factory function from the collections module in Python that creates a new class-like object that behaves like a tuple, but with named fields. Here are some cases where you might consider using namedtuple:
+  Improved readability: If you have a collection of records or objects that have a fixed set of attributes, using a namedtuple can make your code more readable by giving names to the fields instead of relying on integer indices.</description>
+    </item>
+    
+    <item>
+      <title>Name Mangling</title>
+      <link>https://blog.aaronnotes.com/posts/python/name-mangling/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/name-mangling/</guid>
+      <description>Name mangling is a feature in Python that is used to avoid naming conflicts in class hierarchies by adding a prefix to the name of a class member that starts with two underscores, but does not end with more than one underscore.
+When a member name is prefixed with two underscores, Python automatically rewrites the name in a way that makes it harder to access the member from outside the class.</description>
+    </item>
+    
+    <item>
+      <title>Monkey Patching</title>
+      <link>https://blog.aaronnotes.com/posts/python/monkey-patching/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/monkey-patching/</guid>
+      <description>In Python programming, monkey patching refers to the practice of modifying or extending the behavior of a module or object at runtime. This technique allows developers to change the behavior of existing code without modifying the original source code. While monkey patching can be a powerful tool, it can also be dangerous if used improperly.
+What is Monkey Patching? Monkey patching is a technique that allows developers to dynamically modify the behavior of an object or module at runtime.</description>
+    </item>
+    
+    <item>
+      <title>Itertools</title>
+      <link>https://blog.aaronnotes.com/posts/python/itertools/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/itertools/</guid>
+      <description>itertools is a powerful Python library that provides a collection of tools for working with iterators and iterable objects. The library is part of the Python standard library, which means that it comes pre-installed with every Python distribution. itertools provides a suite of functions that can help you manipulate and iterate over iterable objects in a more efficient and concise manner. In this article, we&amp;rsquo;ll explore some of the most useful functions in itertools and give some funny examples to help you understand when to use them.</description>
+    </item>
+    
+    <item>
+      <title>Generator</title>
+      <link>https://blog.aaronnotes.com/posts/python/generator/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/generator/</guid>
+      <description>In Python, a generator is a special type of function that can be used to create iterable sequences of values on-the-fly. Unlike regular functions, which compute and return a value immediately, generators can generate a sequence of values over time, using the yield keyword.
+Example: The following fib function is a generator function that generates a sequence of Fibonacci numbers up to a given limit index n.
+def fib(n): a = [0, 1] i = 0 while i &amp;lt;= n: yield a[i%2] a[i%2] = a[0] + a[1] i += 1  The yield keyword is used to return each generated Fibonacci number as it is generated, which makes the function a generator.</description>
+    </item>
+    
+    <item>
+      <title>Duck Typing</title>
+      <link>https://blog.aaronnotes.com/posts/python/duck-typing/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/duck-typing/</guid>
+      <description>Duck typing is a concept in dynamic programming languages like Python, where the type of an object is determined not by its class name, but by its behavior or the methods and attributes it defines. The term &amp;ldquo;duck typing&amp;rdquo; comes from the phrase &amp;ldquo;if it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.&amp;rdquo;
+In Python, duck typing means that an object&amp;rsquo;s suitability for a given task is determined by the presence of specific methods or attributes, rather than its type.</description>
+    </item>
+    
+    <item>
+      <title>Dependency Injection</title>
+      <link>https://blog.aaronnotes.com/posts/python/dependency-injection/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/dependency-injection/</guid>
+      <description>Dependency injection is a design pattern commonly used in software engineering that allows for the separation of concerns and promotes code reusability. It is a technique that enables the creation of loosely coupled code, which can be easily tested, maintained, and extended.
+What is Dependency Injection? Dependency injection is a design pattern that allows for the separation of concerns between different parts of a program or system. In dependency injection, the dependencies required by a component or module are injected into it at runtime, rather than being hardcoded into the component or module.</description>
+    </item>
+    
+    <item>
+      <title>Singleton with Decorator</title>
+      <link>https://blog.aaronnotes.com/posts/python/singleton-with-decorator/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/singleton-with-decorator/</guid>
+      <description>In Python, a singleton is a design pattern that restricts the instantiation of a class to a single object. A singleton class ensures that only one instance of the class is created and provides a global point of access to that instance.
+One way to implement a singleton in Python is to use a decorator. Here&amp;rsquo;s an example:
+def singleton(cls): instances = {} def get_instance(*args, **kwargs): if cls not in instances: instances[cls] = cls(*args, **kwargs) return instances[cls] return get_instance @singleton class MyClass: def __init__(self, x): self.</description>
+    </item>
+    
+    <item>
+      <title>Comprehensions</title>
+      <link>https://blog.aaronnotes.com/posts/python/comprehensions/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/comprehensions/</guid>
+      <description>In Python, there are several types of comprehensions that can be used to create new data structures from existing ones:
+list comprehension A list comprehension is a concise way to create a new list by iterating over an existing iterable and applying a transformation or filtering condition to each element. Here&amp;rsquo;s an example:
+my_list = [1, 2, 3, 4, 5] squared_list = [x*x for x in my_list] print(squared_list) # Output: [1, 4, 9, 16, 25]  In this example, the list comprehension [x*x for x in my_list] creates a new list by squaring each element of my_list.</description>
+    </item>
+    
+    <item>
+      <title>Arguments</title>
+      <link>https://blog.aaronnotes.com/posts/python/arguments/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/arguments/</guid>
+      <description>In Python, there are several ways to pass arguments to a function, including positional arguments, keyword arguments, default arguments, variable-length argument lists (*args), and variable-length keyword argument dictionaries (**kwargs). The choice of argument passing method depends on the specific requirements of the function and the nature of the data being passed.
+Here&amp;rsquo;s a brief overview of the different argument passing methods in Python:
+  Positional arguments: Positional arguments are passed to a function based on their position in the argument list.</description>
+    </item>
+    
+    <item>
+      <title>Array</title>
+      <link>https://blog.aaronnotes.com/posts/python/array/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/array/</guid>
+      <description>In Python, an array is a data structure that stores a collection of elements of the same data type. Unlike lists, which can contain elements of different data types, arrays can only contain elements of a single data type, such as integers, floats, or characters.
+Python supports two types of arrays: arrays provided by the built-in array module and arrays provided by the numpy module.
+built-in array module The array module provides a simple way to create and manipulate arrays of primitive data types, such as integers, floats, and characters.</description>
+    </item>
+    
+  </channel>
+</rss>

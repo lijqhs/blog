@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>monkey patching on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/monkey-patching/</link>
+    <description>Recent content in monkey patching on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/monkey-patching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monkey Patching</title>
+      <link>https://blog.aaronnotes.com/posts/python/monkey-patching/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/monkey-patching/</guid>
+      <description>In Python programming, monkey patching refers to the practice of modifying or extending the behavior of a module or object at runtime. This technique allows developers to change the behavior of existing code without modifying the original source code. While monkey patching can be a powerful tool, it can also be dangerous if used improperly.
+What is Monkey Patching? Monkey patching is a technique that allows developers to dynamically modify the behavior of an object or module at runtime.</description>
+    </item>
+    
+  </channel>
+</rss>

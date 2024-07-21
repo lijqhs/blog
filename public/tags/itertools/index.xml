@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>itertools on Dev Blog</title>
+    <link>https://blog.aaronnotes.com/tags/itertools/</link>
+    <description>Recent content in itertools on Dev Blog</description>
+    <image>
+      <title>Dev Blog</title>
+      <url>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</url>
+      <link>https://cdn.jsdelivr.net/gh/lijqhs/cdn@1.6/img/icons/rocket-andy-hermawan-unsplash.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.aaronnotes.com/tags/itertools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Itertools</title>
+      <link>https://blog.aaronnotes.com/posts/python/itertools/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.aaronnotes.com/posts/python/itertools/</guid>
+      <description>itertools is a powerful Python library that provides a collection of tools for working with iterators and iterable objects. The library is part of the Python standard library, which means that it comes pre-installed with every Python distribution. itertools provides a suite of functions that can help you manipulate and iterate over iterable objects in a more efficient and concise manner. In this article, we&amp;rsquo;ll explore some of the most useful functions in itertools and give some funny examples to help you understand when to use them.</description>
+    </item>
+    
+  </channel>
+</rss>
