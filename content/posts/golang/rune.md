@@ -1,6 +1,6 @@
 ---
-title: Go vs Python: A Deep Dive into String Length
-slug: Go vs Python: A Deep Dive into String Length
+title: Go vs Python - A Deep Dive into String Length
+slug: Go vs Python A Deep Dive into String Length
 author: aaron
 date: 2024-08-09
 tags: ["python", "golang"]
